@@ -20,9 +20,9 @@
   --ameixa: #4A2346;
   --ameixa-escura: #2A1428;
   --porcelana: #F7F6F3;
-  --verde-emanuel: #4F6E5C;   /* PROVISÓRIO: sálvia, até receber a paleta do Emanuel */
-  --verde-emanuel-escuro: #3A5245;
-  --verde-emanuel-claro: #E6EDE8;
+  --verde-emanuel: #2F4537;   /* Sálvia escura: cor de identidade da Mentoria Calamus (manual v1, out/2026) */
+  --verde-emanuel-escuro: #22342A;
+  --verde-emanuel-claro: #E3EBE5;
   --sub: #6A5D69;             /* texto secundário (AA sobre branco) */
   --sub-escuro: #CDBDCB;      /* texto secundário sobre ameixa */
   --linha: #E6E0E5;
@@ -456,3 +456,101 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .ed-contato { display: flex; gap: 32px; align-items: center; }
 .ed-simbolo { width: 96px; flex: none; }
 @media (max-width: 760px) { .colecoes { grid-template-columns: 1fr; } .ed-contato { flex-direction: column; align-items: start; } }
+
+/* ===================== Mentoria Calamus (manual v1, out/2026) =====================
+   Sálvia escura #2F4537 (identidade) · Sálvia #4F6E5C (apoio) · Sálvia clara #E3EBE5 (fundos)
+   Porcelana #F7F6F3 · Champanhe #DCC18C só em filetes sobre fundo escuro · Ouro velho #B08F52 só em filetes sobre claro.
+   O ouro nunca entra em botão, texto corrido ou fundo de interface. */
+.tema-mentoria { --tm: #2F4537; --tm-escuro: #22342A; --tm-apoio: #4F6E5C; --tm-claro: #E3EBE5; --tm-sub: #B9C8BE; color: #1F2E25; }
+.tema-mentoria h1, .tema-mentoria h2, .tema-mentoria h3 { color: var(--tm); }
+.tema-mentoria .rotulo { color: var(--tm-apoio); }
+.tema-mentoria .lead { color: #1F2E25; }
+.tema-mentoria .btn { background: var(--tm); border-color: var(--tm); color: var(--porcelana); }
+.tema-mentoria .btn:hover { background: var(--tm-escuro); border-color: var(--tm-escuro); color: var(--branco); }
+.tema-mentoria .btn.claro { background: var(--porcelana); border-color: var(--porcelana); color: var(--tm); }
+.tema-mentoria .btn.claro:hover { background: var(--branco); color: var(--tm-escuro); }
+.tema-mentoria :focus-visible { outline-color: var(--tm-apoio); }
+.tema-mentoria .secao.tm-claro { background: var(--porcelana); }
+.tema-mentoria .secao.tm-suave { background: var(--tm-claro); }
+.tema-mentoria .secao + .secao { border-top: 0; }
+.tm-fil { display: block; width: 56px; height: 2px; background: #B08F52; margin: 0 0 18px; }
+
+.tm-hero { position: relative; overflow: hidden; background: var(--tm); color: var(--porcelana); padding: 72px 0 80px; }
+.tm-hero .tm-fil { background: #DCC18C; margin: 30px 0 26px; }
+.tm-hero h1 { color: var(--porcelana); font-size: clamp(2rem, 4.4vw, 3.2rem); max-width: 12em; margin: 0 0 .4em; }
+.tm-hero-grade { position: relative; display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: center; }
+.tm-assinatura { width: min(380px, 90%); height: auto; }
+.tm-sub { font-size: clamp(1.08rem, 1.5vw, 1.25rem); max-width: 30em; margin: 0 0 14px; color: var(--porcelana); }
+.tm-assina { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: 1.3rem; color: var(--tm-sub); margin: 0 0 30px; }
+.tm-acoes { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; }
+.tm-link { color: var(--porcelana); font-size: .82rem; text-transform: uppercase; letter-spacing: .25em; text-decoration: none; border-bottom: 1px solid rgba(247,246,243,.45); padding-bottom: 4px; }
+.tm-link:hover { color: var(--branco); border-color: var(--branco); }
+.tm-retrato { margin: 0; justify-self: center; text-align: center; }
+.tm-foto { width: 280px; height: 280px; border-radius: 50%; object-fit: cover; object-position: 50% 22%; outline: 2px solid #DCC18C; outline-offset: 10px; }
+.tm-retrato figcaption { margin-top: 26px; font-size: .72rem; text-transform: uppercase; letter-spacing: .35em; color: var(--tm-sub); }
+.tm-dagua { position: absolute; right: -120px; bottom: -160px; width: 520px; opacity: .06; pointer-events: none; }
+
+.tm-etapas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 44px; }
+.tm-etapa { background: var(--branco); padding: 32px 28px 30px; border-radius: var(--raio); }
+.tm-etapa h3 { font-size: 1.25rem; margin: 0 0 4px; }
+.tm-meta { font-size: .78rem; text-transform: uppercase; letter-spacing: .14em; color: var(--tm-apoio); margin: 0 0 16px; }
+.tm-etapa ul { margin: 0; padding-left: 1.1em; }
+.tm-etapa li { margin: 0 0 8px; font-size: .98rem; }
+.tm-etapa li::marker { color: var(--tm-apoio); }
+
+.tm-duas { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+.tm-nota { color: #4A5A50; font-size: .95rem; margin-top: 18px; }
+.tm-passos { list-style: none; margin: 0; padding: 0; counter-reset: p; }
+.tm-passos li { display: grid; grid-template-columns: 44px 1fr; gap: 18px; padding: 0 0 22px; position: relative; }
+.tm-passos li:not(:last-child)::before { content: ""; position: absolute; left: 21px; top: 44px; bottom: 0; width: 1px; background: var(--tm-sub); }
+.tm-num { width: 44px; height: 44px; border-radius: 50%; background: var(--tm); color: var(--porcelana); display: grid; place-items: center; font-family: "Cinzel", Georgia, serif; font-size: 1.1rem; }
+.tm-passos strong { display: block; font-weight: 500; color: var(--tm); font-size: 1.08rem; margin-top: 8px; }
+.tm-passos p { margin: 2px 0 0; color: #3B4A41; }
+
+.tm-ofertas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+.tm-oferta { background: var(--branco); border: 1px solid #D5E0D9; border-radius: var(--raio); padding: 28px 24px; display: flex; flex-direction: column; }
+.tm-qtd { margin: 0 0 14px; font-size: .78rem; text-transform: uppercase; letter-spacing: .2em; color: var(--tm-apoio); }
+.tm-qtd span { font-family: "Cinzel", Georgia, serif; font-size: 1.5rem; color: var(--tm); letter-spacing: 0; margin-right: 4px; vertical-align: -2px; }
+.tm-preco { font-family: "Cinzel", Georgia, serif; font-size: 2rem; color: var(--tm); margin: 0; line-height: 1.1; }
+.tm-preco small { font-family: "Jost", Arial, sans-serif; font-size: .9rem; margin-right: 2px; }
+.tm-parc { font-size: .85rem; color: #4A5A50; margin: 6px 0 18px; }
+.tm-oferta ul { list-style: none; margin: 0 0 24px; padding: 16px 0 0; border-top: 1px solid var(--tm-claro); font-size: .92rem; }
+.tm-oferta li { padding: 4px 0 4px 18px; position: relative; }
+.tm-oferta li::before { content: ""; position: absolute; left: 0; top: .85em; width: 8px; height: 1px; background: var(--tm-apoio); }
+.tm-oferta .btn { margin-top: auto; text-align: center; }
+
+.tm-pessoas { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 10px; }
+.tm-pessoa { display: grid; grid-template-columns: 120px 1fr; gap: 26px; align-items: start; }
+.tm-mini { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: 50% 22%; }
+.tm-mini-simbolo { object-fit: contain; background: var(--branco); padding: 26px; }
+.tm-pessoa h3 { margin: 6px 0 4px; }
+
+.tm-faq { border-bottom: 1px solid #D5E0D9; padding: 18px 0; }
+.tm-faq:first-child { border-top: 1px solid #D5E0D9; }
+.tm-faq summary { cursor: pointer; font-weight: 500; color: var(--tm); list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.tm-faq summary::-webkit-details-marker { display: none; }
+.tm-faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--tm-apoio); }
+.tm-faq[open] summary::after { content: "–"; }
+.tm-faq p { margin: 12px 0 0; color: #3B4A41; }
+
+.tm-final { background: var(--tm); color: var(--porcelana); padding: 80px 0; text-align: center; }
+.tm-final h2 { color: var(--porcelana); margin: 22px auto 28px; max-width: 18em; }
+.tm-final-simbolo { width: 64px; margin: 0 auto; }
+.tm-aviso { max-width: 44em; margin: 40px auto 0; font-size: .85rem; color: var(--tm-sub); }
+
+@media (max-width: 1000px) {
+  .tm-ofertas { grid-template-columns: repeat(2, 1fr); }
+  .tm-etapas { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .tm-hero { padding: 48px 0 56px; }
+  .tm-hero-grade, .tm-duas, .tm-pessoas { grid-template-columns: 1fr; gap: 36px; }
+  .tm-retrato { order: -1; }
+  .tm-foto { width: 180px; height: 180px; }
+  .tm-ofertas { grid-template-columns: 1fr; }
+  .tm-pessoa { grid-template-columns: 84px 1fr; gap: 18px; }
+  .tm-mini { width: 84px; height: 84px; }
+  .tm-mini-simbolo { padding: 18px; }
+}
+.tm-oferta .btn { padding-left: 12px; padding-right: 12px; letter-spacing: .18em; white-space: nowrap; }
+.tm-iniciais { display: grid; place-items: center; background: var(--branco); color: var(--tm); font-family: "Cinzel", Georgia, serif; font-size: 1.6rem; letter-spacing: .08em; }
