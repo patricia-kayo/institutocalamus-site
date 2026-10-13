@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursos · Instituto Calamus</title>
+<meta name="description" content="Cursos livres de grafoscopia e da área médica do Instituto Calamus.">
+<link rel="canonical" href="https://institutocalamus.com.br/cursos/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto Calamus">
+<meta property="og:title" content="Cursos · Instituto Calamus">
+<meta property="og:description" content="Cursos livres de grafoscopia e da área médica do Instituto Calamus.">
+<meta property="og:url" content="https://institutocalamus.com.br/cursos/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_32px.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon_192px.png">
+<link rel="apple-touch-icon" href="../assets/img/favicon_192px.png">
+<link rel="preload" href="../assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/calamus.css">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/logo-cor.svg" alt="Instituto Calamus"></a>
+    <nav class="menu" aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos</a><a href="../cursos/index.html" aria-current="page">Cursos</a><a href="../mentoria/index.html">Mentoria</a><a href="../editora/index.html">Editora</a><a href="../sobre/index.html">Sobre</a></nav>
+    <details class="menu-movel"><summary>Menu</summary><nav aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos</a><a href="../cursos/index.html" aria-current="page">Cursos</a><a href="../mentoria/index.html">Mentoria</a><a href="../editora/index.html">Editora</a><a href="../sobre/index.html">Sobre</a></nav></details>
+  </div>
+</header>
+<main>
+<section class="hero interna">
+  <img class="dagua" src="../assets/img/monograma-ameixa.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <p class="rotulo">Formação</p>
+    <h1>Cursos</h1>
+    
+    <p class="lead">Cursos livres em duas frentes: grafoscopia, com Patrícia Kayo, e área médica, com Dr. Emanuel Behrens.</p>
+  </div>
+</section>
+<section class="secao branca"><div class="wrap">
+  <div class="cab-secao"><div><p class="rotulo">Grafoscopia</p><h2>Com Patrícia Kayo</h2></div></div>
+  <div class="grade duas"><article class="cartao curso">
+  <img class="thumb" src="../assets/img/capas/curso-ia-aplicada-a-pericia-grafoscopica.png" alt="" loading="lazy">
+  <div class="texto">
+  <span class="etiqueta jade">Grafoscopia</span>
+  <h3>IA aplicada à perícia grafoscópica</h3>
+  <p>Como a inteligência artificial pode apoiar o fluxo do exame grafotécnico, do recebimento do material ao laudo, e onde ela não substitui o exame.</p>
+  <div class="rodape-cartao"><span class="formato">Com Patrícia Kayo</span><span class="status">Em breve</span></div>
+  </div>
+</article></div></div></section>
+<section class="secao"><div class="wrap">
+  <div class="cab-secao"><div><p class="rotulo">Área médica</p><h2>Com Dr. Emanuel Behrens</h2></div></div>
+  <div class="grade duas"><p class="sub">Os cursos da área médica estão em preparação.</p></div></div></section>
+</main>
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-grade">
+      <div>
+        <img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus">
+        <p>Conteúdo, produtos e cursos para quem atua ou quer atuar na perícia.</p>
+      </div>
+      <div><h4>Conteúdo</h4><ul>
+        <li><a href="../artigos/index.html">Artigos</a></li>
+        <li><a href="../cursos/index.html">Cursos</a></li>
+        <li><a href="../mentoria/index.html">Mentoria</a></li>
+        <li><a href="../editora/index.html">Editora</a></li></ul></div>
+      <div><h4>Loja</h4><ul>
+        <li><a href="../produtos/index.html">Produtos</a></li>
+        <li><a href="../produtos/index.html#para-comecar">Para começar</a></li>
+        <li><a href="../produtos/index.html#organizacao">Organização</a></li></ul></div>
+      <div><h4>Contato</h4><ul>
+        
+        <li><a href="../sobre/index.html">Sobre o instituto</a></li></ul></div>
+    </div>
+    <div class="legal">
+      Instituto Calamus<br>
+      Pagamentos processados pela Kiwify. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
+      © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.
+    </div>
+  </div>
+</footer>
+<script>
+/* deixa "Para médicos recém-formados" exatamente da largura de MENTORIA */
+(function(){
+  function ajusta(){ document.querySelectorAll(".m-cabeca").forEach(function(c){
+    var t=c.querySelector(".m-titulo"), s=c.querySelector(".ajusta"); if(!t||!s) return;
+    s.style.fontSize="20px"; var w=s.getBoundingClientRect().width, W=t.getBoundingClientRect().width;
+    var ft=parseFloat(getComputedStyle(t).fontSize), ls=parseFloat(getComputedStyle(s).letterSpacing)/20||0.12;
+    /* compara só a largura das letras (sem o espaçamento depois da última) */
+    if(w>0) s.style.fontSize=(20*(W-0.14*ft)/(w-ls*20))+"px"; }); }
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajusta); window.addEventListener("load",ajusta); window.addEventListener("resize",ajusta); ajusta();
+})();
+</script>
+</body>
+</html>

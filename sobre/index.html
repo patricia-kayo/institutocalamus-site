@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre · Instituto Calamus</title>
+<meta name="description" content="Sobre o Instituto Calamus e seus autores.">
+<link rel="canonical" href="https://institutocalamus.com.br/sobre/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto Calamus">
+<meta property="og:title" content="Sobre · Instituto Calamus">
+<meta property="og:description" content="Sobre o Instituto Calamus e seus autores.">
+<meta property="og:url" content="https://institutocalamus.com.br/sobre/">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_32px.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon_192px.png">
+<link rel="apple-touch-icon" href="../assets/img/favicon_192px.png">
+<link rel="preload" href="../assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/calamus.css">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/logo-cor.svg" alt="Instituto Calamus"></a>
+    <nav class="menu" aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos</a><a href="../cursos/index.html">Cursos</a><a href="../mentoria/index.html">Mentoria</a><a href="../editora/index.html">Editora</a><a href="../sobre/index.html" aria-current="page">Sobre</a></nav>
+    <details class="menu-movel"><summary>Menu</summary><nav aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos</a><a href="../cursos/index.html">Cursos</a><a href="../mentoria/index.html">Mentoria</a><a href="../editora/index.html">Editora</a><a href="../sobre/index.html" aria-current="page">Sobre</a></nav></details>
+  </div>
+</header>
+<main>
+<section class="hero interna">
+  <img class="dagua" src="../assets/img/monograma-ameixa.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <p class="rotulo">Sobre</p>
+    <h1>Instituto Calamus</h1>
+    <p class="italico">Da origem do traço à conclusão.</p>
+    <p class="lead">O Instituto Calamus reúne conteúdo, produtos, cursos e mentoria em duas frentes: a perícia, especialmente a grafoscopia, e a formação médica.</p>
+  </div>
+</section>
+<section class="secao branca" id="autora"><div class="wrap ">
+  
+  <div>
+    <p class="rotulo">Autora dos artigos</p>
+    <h2>Patrícia Kayo</h2>
+    <p>Perita judicial e extrajudicial em grafoscopia, documentoscopia e documentoscopia digital. Atua como perita nomeada e como assistente técnica, com cadastro no TJSC, TJPR, TJSP, TRF4 e TRT-12.</p>
+    <p>Graduada em Química pela UFSC, conclui o MBA em Grafoscopia e Documentoscopia e cursa o mestrado no PPGTIC da UFSC Araranguá, com pesquisa em inteligência artificial aplicada à análise de assinaturas biodinâmicas.</p>
+    <p class="sub">Pedidos de perícia ou parecer técnico são atendidos pelo site profissional: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.</p>
+  </div>
+</div></section>
+<section class="secao"><div class="wrap perfil">
+  <div><img class="foto-retrato" src="../assets/img/emanuel.jpg" alt="Dr. Emanuel Behrens" style="max-width:260px"></div>
+  <div>
+    <p class="rotulo">Mentoria e cursos da área médica</p>
+    <h2>Dr. Emanuel Behrens</h2>
+    <p>MÉDICO · CRM-SC 28.919. Professor substituto do curso de Medicina da UFSC Araranguá, na área de Clínica Médica.</p>
+  </div>
+</div></section>
+
+</main>
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-grade">
+      <div>
+        <img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus">
+        <p>Conteúdo, produtos e cursos para quem atua ou quer atuar na perícia.</p>
+      </div>
+      <div><h4>Conteúdo</h4><ul>
+        <li><a href="../artigos/index.html">Artigos</a></li>
+        <li><a href="../cursos/index.html">Cursos</a></li>
+        <li><a href="../mentoria/index.html">Mentoria</a></li>
+        <li><a href="../editora/index.html">Editora</a></li></ul></div>
+      <div><h4>Loja</h4><ul>
+        <li><a href="../produtos/index.html">Produtos</a></li>
+        <li><a href="../produtos/index.html#para-comecar">Para começar</a></li>
+        <li><a href="../produtos/index.html#organizacao">Organização</a></li></ul></div>
+      <div><h4>Contato</h4><ul>
+        
+        <li><a href="../sobre/index.html">Sobre o instituto</a></li></ul></div>
+    </div>
+    <div class="legal">
+      Instituto Calamus<br>
+      Pagamentos processados pela Kiwify. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
+      © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.
+    </div>
+  </div>
+</footer>
+<script>
+/* deixa "Para médicos recém-formados" exatamente da largura de MENTORIA */
+(function(){
+  function ajusta(){ document.querySelectorAll(".m-cabeca").forEach(function(c){
+    var t=c.querySelector(".m-titulo"), s=c.querySelector(".ajusta"); if(!t||!s) return;
+    s.style.fontSize="20px"; var w=s.getBoundingClientRect().width, W=t.getBoundingClientRect().width;
+    var ft=parseFloat(getComputedStyle(t).fontSize), ls=parseFloat(getComputedStyle(s).letterSpacing)/20||0.12;
+    /* compara só a largura das letras (sem o espaçamento depois da última) */
+    if(w>0) s.style.fontSize=(20*(W-0.14*ft)/(w-ls*20))+"px"; }); }
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajusta); window.addEventListener("load",ajusta); window.addEventListener("resize",ajusta); ajusta();
+})();
+</script>
+</body>
+</html>
