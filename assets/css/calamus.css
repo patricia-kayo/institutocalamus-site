@@ -558,3 +558,4 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .m-marca { display: flex; align-items: center; gap: clamp(16px, 2.2vw, 30px); }
 .m-simbolo { height: clamp(78px, 8.6vw, 124px); width: auto; flex: none; }
 @media (max-width: 560px) { .m-simbolo { height: 64px; } }
+.tm-pessoas.tm-uma { grid-template-columns: minmax(0, 640px); }
