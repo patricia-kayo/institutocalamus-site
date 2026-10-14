@@ -858,3 +858,13 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .mt h1 span, .mt .mt-com span { white-space: nowrap; }
 @media (min-width: 761px) { .mt h1 span { display: block; } }
 .mt .mt-com span { font-family: inherit; font-style: normal; font-size: inherit; letter-spacing: inherit; color: inherit; }
+/* Mentoria em abas: cards da versão inicial dentro das abas */
+.mt .tm-etapa { background: var(--porcelana); }
+.mt .tm-etapas { margin-top: 0; }
+.mt .tm-ofertas { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 0; }
+.mt .tm-oferta { padding: 26px 20px; }
+.mt .tm-oferta .btn { white-space: normal; letter-spacing: .14em; padding: 12px 8px; }
+@media (max-width: 960px) { .mt .tm-ofertas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .mt .tm-ofertas { gap: 12px; } .mt .tm-oferta { padding: 18px 14px; } }
+.mt .tm-etapa ul { list-style: disc; padding-left: 1.1em; margin-top: 6px; }
+.mt .tm-oferta ul { padding-top: 16px; }
