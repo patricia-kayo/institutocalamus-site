@@ -681,3 +681,7 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .tm-etapas { gap: 16px; margin-top: 28px; }
   .tm-etapa { padding: 24px 20px; }
 }
+.tm-intro { font-size: 1.08rem; line-height: 1.7; color: #1F2E25; margin: 0 0 16px; max-width: 34em; }
+.tm-nota-topo { margin: 6px 0 26px; font-size: 1rem; color: #3B4A41; }
+.tm-passos strong + p { margin-top: 2px; }
+.tm-passos li div strong:only-child { margin-top: 11px; }
