@@ -716,3 +716,15 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .hx-c .hx-texto { padding-left: 18px; }
   .hx-c .hx-frase { font-size: 1.25rem; }
 }
+/* Mentoria: marca maior que o título; foto no estilo do site do Emanuel (14/10) */
+.tm-marca img { height: 92px; }
+.tm-marca span { font-size: clamp(2.2rem, 3.9vw, 3.3rem); letter-spacing: .28em; }
+.tm-hero h1 { font-size: clamp(1.2rem, 2.6vw, 2.15rem); }
+.tm-mini:not(.tm-iniciais) { box-shadow: 0 0 0 4px #fff, 0 0 0 5px #4F6E5C; object-position: 50% 30%; }
+.tm-ofertas { margin-top: 28px; }
+@media (max-width: 760px) {
+  .tm-marca img { height: 62px; }
+  .tm-marca span { font-size: 1.9rem; }
+  .tm-hero h1 { font-size: 5vw; }
+}
+.tema-mentoria .secao .tm-aviso-final { margin: 48px 0 0; font-size: .85rem; color: #5B6B61; max-width: 52em; border-left: 2px solid #4F6E5C; padding-left: 16px; }
