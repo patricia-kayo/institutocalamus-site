@@ -913,3 +913,7 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .mt .tm-qtd { text-align: right; margin: 0; }
 .mt .tm-qtd { text-align: left; }
 .mt .tm-preco { text-shadow: 0 3px 8px rgba(47,69,55,.28); }
+/* Abertura compacta (página de produtos, 14/10/2026) */
+.hero.interna.compacta { padding: 52px 0 44px; }
+.hero.interna.compacta .dagua { width: 260px; bottom: -90px; right: -40px; }
+@media (max-width: 760px) { .hero.interna.compacta { padding: 36px 0 32px; } .hero.interna.compacta .dagua { width: 200px; bottom: -70px; } }
