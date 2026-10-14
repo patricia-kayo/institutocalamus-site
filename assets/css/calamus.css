@@ -654,3 +654,30 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .tm-hero h1 { font-size: clamp(1.3rem, 3.3vw, 2.7rem); }
 .tm-hero h1 span { display: block; white-space: nowrap; }
 @media (max-width: 760px) { .tm-hero h1 { font-size: 5.1vw; } }
+
+/* ===== Mentoria no celular (ajustes 13/10) ===== */
+@media (max-width: 760px) {
+  .tm-hero { padding: 36px 0 40px; }
+  .tm-hero-grade { gap: 28px; }
+  .tm-retrato { order: 2; justify-self: start; }
+  .tm-retrato { display: flex; align-items: center; gap: 18px; text-align: left; }
+  .tm-foto { width: 96px; height: 96px; outline-offset: 6px; }
+  .tm-retrato figcaption { margin-top: 0; align-items: flex-start; }
+  .tm-retrato .tm-com { font-size: 1.1rem; }
+  .tm-hero .tm-fil { margin: 22px 0 18px; }
+  .tm-hero h1 { font-size: 6.2vw; letter-spacing: .03em; margin-bottom: 14px; }
+  .tm-sub { font-size: 1rem; margin-bottom: 22px; }
+  .tm-acoes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tm-acoes .btn { padding: 13px 8px; font-size: .68rem; letter-spacing: .16em; text-align: center; }
+  .tm-ofertas { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+  .tm-oferta { padding: 18px 14px; }
+  .tm-oferta ul { display: none; }
+  .tm-qtd { font-size: .64rem; letter-spacing: .14em; margin-bottom: 8px; }
+  .tm-qtd span { font-size: 1.2rem; }
+  .tm-preco { font-size: 1.5rem; }
+  .tm-parc { font-size: .74rem; margin-bottom: 14px; }
+  .tm-oferta .btn { white-space: normal; font-size: .64rem; letter-spacing: .12em; padding: 11px 6px; }
+  .tema-mentoria .secao { padding: 56px 0; }
+  .tm-etapas { gap: 16px; margin-top: 28px; }
+  .tm-etapa { padding: 24px 20px; }
+}
