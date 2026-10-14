@@ -917,3 +917,9 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .hero.interna.compacta { padding: 52px 0 44px; }
 .hero.interna.compacta .dagua { width: 260px; bottom: -90px; right: -40px; }
 @media (max-width: 760px) { .hero.interna.compacta { padding: 36px 0 32px; } .hero.interna.compacta .dagua { width: 200px; bottom: -70px; } }
+/* Produtos: marca IC passa por cima da faixa rosa (atrás dos cards) */
+.hero.interna.compacta { overflow: visible; z-index: 1; }
+.hero.interna.compacta .dagua { width: 360px; bottom: -230px; right: 28px; }
+.hero.interna.compacta + .secao { position: relative; }
+.hero.interna.compacta + .secao .wrap { position: relative; z-index: 2; }
+@media (max-width: 760px) { .hero.interna.compacta .dagua { width: 220px; bottom: -130px; right: 8px; } }
