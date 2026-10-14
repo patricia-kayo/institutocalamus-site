@@ -911,3 +911,4 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 /* Valores: preço no canto superior direito, quantidade logo abaixo */
 .mt .tm-preco { text-align: right; margin: 0 0 6px; }
 .mt .tm-qtd { text-align: right; margin: 0; }
+.mt .tm-qtd { text-align: left; }
