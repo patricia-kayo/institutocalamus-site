@@ -728,3 +728,28 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .tm-hero h1 { font-size: 5vw; }
 }
 .tema-mentoria .secao .tm-aviso-final { margin: 48px 0 0; font-size: .85rem; color: #5B6B61; max-width: 52em; border-left: 2px solid #4F6E5C; padding-left: 16px; }
+
+/* ===== Mentoria · Como funciona com ícones (14/10) ===== */
+.cf-sec { background: #2F4537; padding: 76px 0; }
+.cf-cab { text-align: center; max-width: 760px; margin: 0 auto 44px; }
+.cf-sec h2 { color: var(--porcelana); margin: 0 0 14px; }
+.cf-frase { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: 1.45rem; line-height: 1.45; color: #D5E0D9; margin: 0; }
+.cf-cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.cf-card { background: #fff; border-radius: 6px; padding: 30px 24px 28px; position: relative; box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+.cf-card:not(:last-child)::after { content: ""; position: absolute; right: -16px; top: 58px; width: 12px; height: 12px; border-top: 2px solid #DCC18C; border-right: 2px solid #DCC18C; transform: rotate(45deg); }
+.cf-ic { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #2F4537; color: var(--porcelana); margin-bottom: 18px; }
+.cf-ic svg { width: 30px; height: 30px; }
+.cf-n { position: absolute; top: 26px; right: 24px; font-family: "Cinzel", Georgia, serif; font-size: 1.6rem; color: #B9C8BE; }
+.cf-card strong { display: block; color: #2F4537; font-weight: 500; font-size: 1.1rem; margin-bottom: 8px; }
+.tema-mentoria .cf-card p { margin: 0; color: #3B4A41; font-size: 1.02rem; line-height: 1.6; }
+.cf-nota { text-align: center; color: #B9C8BE; margin: 30px 0 0; font-size: .95rem; }
+@media (max-width: 900px) { .cf-cards { grid-template-columns: 1fr 1fr; } .cf-card::after { display: none; } }
+@media (max-width: 560px) {
+  .cf-sec { padding: 52px 0; }
+  .cf-frase { font-size: 1.2rem; }
+  .cf-cards { grid-template-columns: 1fr; gap: 14px; }
+  .cf-card { display: grid; grid-template-columns: 56px 1fr; column-gap: 16px; padding: 22px 20px; }
+  .cf-ic { width: 52px; height: 52px; margin: 0; grid-row: span 2; }
+  .cf-ic svg { width: 24px; height: 24px; }
+  .cf-n { top: 20px; font-size: 1.2rem; }
+}
