@@ -613,3 +613,16 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .s-mentoria .m-lista li { font-size: .92rem; }
   .s-titulo-ed .ed-assinatura { width: min(280px, 100%); }
 }
+
+/* ===== Área de Cursos: Azul-tinta #1F3150 (13/10/2026) ===== */
+:root { --azul-tinta: #1F3150; --azul-tinta-escuro: #15223A; --azul-tinta-claro: #E4E9F1; --azul-sub: #B7C2D4; }
+.s-cursos { background: var(--azul-tinta); }
+.s-cursos .s-rotulo, .s-cursos .s-lead { color: var(--azul-sub); }
+.s-cursos .btn.claro { color: var(--azul-tinta); }
+.tema-cursos h1, .tema-cursos h2, .tema-cursos h3 { color: var(--azul-tinta); }
+.tema-cursos .rotulo { color: #4A6189; }
+.tema-cursos .btn { background: var(--azul-tinta); border-color: var(--azul-tinta); }
+.tema-cursos .btn:hover { background: var(--azul-tinta-escuro); border-color: var(--azul-tinta-escuro); }
+.tema-cursos .etiqueta.jade, .tema-cursos .cartao.curso.medico .etiqueta.jade { background: var(--azul-tinta-claro); color: var(--azul-tinta); }
+.tema-cursos .hero.interna { background: var(--azul-tinta-claro); }
+.tema-cursos .hero h1::after { background: #4A6189; }
