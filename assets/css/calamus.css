@@ -560,3 +560,56 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 @media (max-width: 560px) { .m-simbolo { height: 64px; } }
 .tm-pessoas.tm-uma { grid-template-columns: minmax(0, 640px); }
 .tm-texto { margin: 0; font-size: .98rem; }
+
+/* ===== cabeçalho no celular: só o monograma IC (I em ouro velho) ===== */
+.marca-mono { display: none; }
+@media (max-width: 960px) {
+  .marca .marca-logo { display: none; }
+  .marca .marca-mono { display: block; height: 40px; width: auto; }
+}
+
+/* ===== carrossel da home: slides uniformes e mais baixos (13/10) ===== */
+.slide { min-height: 430px; padding: 52px 0 68px; }
+.slide-grade { gap: 48px; }
+.s-rotulo { font-weight: 500; font-size: clamp(.82rem, 1.1vw, 1rem); text-transform: uppercase; letter-spacing: .3em; margin: 0 0 14px; line-height: 1.3; }
+.s-titulo { font-family: "Cinzel", Georgia, serif; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; line-height: 1.08; font-size: clamp(1.9rem, 3.4vw, 2.8rem); margin: 0 0 18px; }
+.s-lead { font-size: clamp(1rem, 1.25vw, 1.12rem); line-height: 1.6; max-width: 30em; margin: 0 0 28px; }
+.s-produtos .s-rotulo { color: var(--salvia); }
+.s-produtos .s-titulo { color: var(--ameixa); }
+.s-produtos .s-lead { color: var(--ameixa-escura); }
+.s-mentoria .s-rotulo { color: #DCC18C; }
+.s-mentoria .s-titulo { color: var(--branco); display: flex; align-items: center; gap: .45em; }
+.s-simbolo { height: 1.15em; width: auto; flex: none; }
+.s-mentoria .m-lista { margin-bottom: 28px; gap: 8px; }
+.s-mentoria .m-lista li { font-size: .98rem; }
+.s-cursos .s-rotulo, .s-cursos .s-lead { color: var(--sub-escuro); }
+.s-cursos .s-titulo { color: var(--branco); }
+.s-editora .s-rotulo, .s-editora .s-lead { color: #EBDADC; }
+.s-titulo-ed { line-height: 1; }
+.s-titulo-ed .ed-assinatura { height: auto; width: min(360px, 100%); display: block; }
+.leque { height: 300px; } .leque img { width: 180px; }
+.pilha { height: 280px; } .pilha img { width: 320px; }
+.pilha img:nth-child(2) { top: 110px; }
+.livros { height: 300px; }
+.circulo .foto-retrato { width: 220px; height: 220px; }
+.circulo figcaption { margin-top: 22px; }
+
+@media (max-width: 960px) {
+  .slide { min-height: 0; padding: 32px 0 56px; align-items: flex-start; }
+  .slide-grade { gap: 22px; }
+  .slide-visual { order: -1; }
+  .s-titulo { font-size: 1.75rem; margin-bottom: 12px; }
+  .s-rotulo { font-size: .78rem; margin-bottom: 10px; }
+  .s-lead { font-size: .98rem; margin-bottom: 20px; }
+  .leque { height: 170px; width: 100%; } .leque img { width: 104px; top: 12px; }
+  .leque img:nth-child(1) { transform: translateX(-74px) rotate(-8deg); } .leque img:nth-child(3) { transform: translateX(74px) rotate(8deg); }
+  .pilha { height: 170px; } .pilha img { width: 230px; }
+  .pilha img:nth-child(1) { transform: translate(-24px,0); top: 0; } .pilha img:nth-child(2) { transform: translate(24px,0); top: 52px; }
+  .livros { height: 170px; } .livros img { width: 108px; }
+  .s-editora .ed-simbolo-slide { width: 120px !important; }
+  .circulo figure { display: flex; align-items: center; gap: 18px; text-align: left; }
+  .circulo .foto-retrato { width: 120px; height: 120px; outline-offset: 6px; }
+  .circulo figcaption { margin-top: 0; }
+  .s-mentoria .m-lista li { font-size: .92rem; }
+  .s-titulo-ed .ed-assinatura { width: min(280px, 100%); }
+}
