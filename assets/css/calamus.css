@@ -701,3 +701,18 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .tema-mentoria .secao .tm-preco { font-size: 1.5rem; }
   .tema-mentoria .secao .tm-parc { font-size: .74rem; }
 }
+
+/* ===== abertura da home: faixa ameixa em duas colunas (14/10) =====
+   Exceção decidida: I e "INSTITUTO" em champanhe e filete champanhe nesta faixa. */
+.hx-c { background: var(--ameixa); padding: 58px 0; }
+.hx-c .hx-grade { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 56px; }
+.hx-c .hx-logo img { width: 100%; max-width: 460px; height: auto; }
+.hx-c .hx-texto { border-left: 2px solid #DCC18C; padding-left: 40px; }
+.hx-c .hx-frase { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: clamp(1.5rem, 2.3vw, 2rem); line-height: 1.35; color: var(--porcelana); margin: 0; max-width: 16em; }
+@media (max-width: 760px) {
+  .hx-c { padding: 36px 0; }
+  .hx-c .hx-grade { grid-template-columns: 1fr; gap: 22px; }
+  .hx-c .hx-logo img { max-width: 290px; }
+  .hx-c .hx-texto { padding-left: 18px; }
+  .hx-c .hx-frase { font-size: 1.25rem; }
+}
