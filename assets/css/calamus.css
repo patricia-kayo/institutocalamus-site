@@ -923,3 +923,4 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .hero.interna.compacta + .secao { position: relative; }
 .hero.interna.compacta + .secao .wrap { position: relative; z-index: 2; }
 @media (max-width: 760px) { .hero.interna.compacta .dagua { width: 220px; bottom: -130px; right: 8px; } }
+.hero.interna.compacta .dagua { display: none; }
