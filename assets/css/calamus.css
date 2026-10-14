@@ -869,3 +869,4 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .mt .tm-etapa ul { list-style: disc; padding-left: 1.1em; margin-top: 6px; }
 .mt .tm-oferta ul { padding-top: 16px; }
 @media (min-width: 761px) { .mt-nav { gap: 0; } .mt-nav button { flex: 1 1 0; text-align: center; } }
+@media (min-width: 761px) { .mt-nav button { white-space: nowrap; letter-spacing: .14em; padding: 12px 6px; } }
