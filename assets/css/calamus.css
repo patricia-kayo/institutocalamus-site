@@ -912,3 +912,4 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .mt .tm-preco { text-align: right; margin: 0 0 6px; }
 .mt .tm-qtd { text-align: right; margin: 0; }
 .mt .tm-qtd { text-align: left; }
+.mt .tm-preco { text-shadow: 0 3px 8px rgba(47,69,55,.28); }
