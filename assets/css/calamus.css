@@ -640,3 +640,17 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 }
 .s-mentoria .s-lead { color: #E4ECE7; }
 @media (max-width: 960px) { .slide-visual { height: 170px; } .m-icone figure { justify-content: center; height: 170px; } }
+
+/* ===== página da Mentoria: marca só "Mentoria" (13/10) ===== */
+.tm-marca { display: flex; align-items: center; gap: 18px; margin: 0; }
+.tm-marca img { height: 64px; width: auto; }
+.tm-marca span { font-family: "Jost", Arial, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .3em; font-size: clamp(1.6rem, 2.6vw, 2.15rem); color: var(--porcelana); line-height: 1; }
+.tm-hero h1 { max-width: none; }
+.tema-mentoria .btn.tm-btn-2 { background: var(--tm-apoio); border-color: var(--tm-apoio); color: var(--porcelana); }
+.tema-mentoria .btn.tm-btn-2:hover { background: #5E806C; border-color: #5E806C; color: var(--branco); }
+.tm-retrato figcaption { display: flex; flex-direction: column; gap: 6px; }
+.tm-retrato .tm-com { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: 1.25rem; letter-spacing: 0; text-transform: none; color: var(--porcelana); }
+@media (max-width: 760px) { .tm-marca img { height: 48px; } .tm-marca span { font-size: 1.4rem; } }
+.tm-hero h1 { font-size: clamp(1.3rem, 3.3vw, 2.7rem); }
+.tm-hero h1 span { display: block; white-space: nowrap; }
+@media (max-width: 760px) { .tm-hero h1 { font-size: 5.1vw; } }
