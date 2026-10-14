@@ -689,3 +689,15 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 #como-funciona .tm-intro, #como-funciona .tm-nota-topo, #como-funciona .tm-passos p { font-size: 1.02rem; line-height: 1.65; color: #1F2E25; }
 #como-funciona .tm-passos strong { font-size: 1.02rem; }
 .tm-etapas.tm-etapas-so { margin-top: 0; }
+/* Mentoria: corpo de texto num tamanho só na página toda (13/10) */
+.tema-mentoria .secao p, .tema-mentoria .secao li, .tema-mentoria .tm-faq summary, .tema-mentoria .tm-texto { font-size: 1.02rem; line-height: 1.65; }
+.tema-mentoria .secao .tm-meta { font-size: .78rem; line-height: 1.5; }
+.tema-mentoria .secao .rotulo { font-size: .75rem; }
+.tema-mentoria .secao .tm-qtd { font-size: .78rem; }
+.tema-mentoria .secao .tm-preco { font-size: 2rem; line-height: 1.1; }
+.tema-mentoria .secao .tm-parc { font-size: .85rem; }
+@media (max-width: 760px) {
+  .tema-mentoria .secao .tm-qtd { font-size: .64rem; }
+  .tema-mentoria .secao .tm-preco { font-size: 1.5rem; }
+  .tema-mentoria .secao .tm-parc { font-size: .74rem; }
+}
