@@ -870,3 +870,7 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .mt .tm-oferta ul { padding-top: 16px; }
 @media (min-width: 761px) { .mt-nav { gap: 0; } .mt-nav button { flex: 1 1 0; text-align: center; } }
 @media (min-width: 761px) { .mt-nav button { white-space: nowrap; letter-spacing: .14em; padding: 12px 6px; } }
+/* Sua jornada: cards com moldura */
+.mt #sua-jornada .mt-4 { gap: 16px; }
+.mt #sua-jornada .mt-4 li { border: 1px solid #D5E0D9; border-radius: var(--raio); padding: 26px 22px 24px; background: var(--branco); }
+@media (max-width: 760px) { .mt #sua-jornada .mt-4 { gap: 12px; } .mt #sua-jornada .mt-4 li { padding: 18px 14px; } }
