@@ -841,3 +841,20 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 /* Mentoria: foto em círculo com anel champanhe (como na opção 2), 14/10/2026 */
 .mt .mt-foto { width: 220px; height: 220px; border-radius: 50%; object-position: 50% 25%; margin: 10px; box-shadow: 0 0 0 1px #DCC18C, 0 0 0 7px var(--porcelana), 0 0 0 8px rgba(220,193,140,.5); }
 @media (max-width: 760px) { .mt .mt-foto { width: 180px; height: 180px; margin: 10px auto; } }
+/* Mentoria: título menor, marca d'água IC, linha do Dr. Emanuel e ícones na Sua jornada (14/10/2026) */
+.mt .mt-hero { position: relative; overflow: hidden; }
+.mt-dagua { position: absolute; right: -80px; bottom: -140px; width: 460px; opacity: .06; pointer-events: none; }
+.mt .mt-in { position: relative; z-index: 1; }
+.mt h1 { font-size: 1.85rem; line-height: 1.2; }
+.mt .mt-com { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: #7A857C; }
+.mt-ic { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: #2F4537; color: #DCC18C; margin-bottom: 16px; }
+.mt-ic svg { width: 26px; height: 26px; }
+@media (max-width: 760px) {
+  .mt h1 { font-size: 1.5rem; }
+  .mt-dagua { width: 300px; right: -70px; bottom: -90px; }
+  .mt-ic { width: 48px; height: 48px; margin-bottom: 12px; }
+  .mt-ic svg { width: 22px; height: 22px; }
+}
+.mt h1 span, .mt .mt-com span { white-space: nowrap; }
+@media (min-width: 761px) { .mt h1 span { display: block; } }
+.mt .mt-com span { font-family: inherit; font-style: normal; font-size: inherit; letter-spacing: inherit; color: inherit; }
