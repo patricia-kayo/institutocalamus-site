@@ -778,3 +778,63 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 /* setas do carrossel ao lado dos pontos, para não cobrir o texto */
 .seta { top: auto; bottom: 16px; transform: none; width: 38px; height: 38px; font-size: 1.5rem; }
 .seta.ant { left: calc(50% - 92px); } .seta.prox { right: calc(50% - 92px); }
+
+/* ===== Mentoria em abas (14/10/2026) ===== */
+.mt { background: var(--porcelana); }
+.mt-in { max-width: 960px; margin: 0 auto; padding: 64px 32px 54px; display: grid; grid-template-columns: 240px 1fr; gap: 56px; align-items: center; }
+.mt-in2 { max-width: 960px; margin: 0 auto; padding: 0 32px; }
+.mt-foto { width: 240px; height: 300px; object-fit: cover; object-position: 50% 25%; border-radius: 120px 120px 8px 8px; }
+.mt-marca { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; }
+.mt-marca img { height: 40px; width: auto; flex: none; }
+.mt-marca span { font-family: 'Cinzel', serif; letter-spacing: .32em; font-size: 1rem; color: var(--tm); text-transform: uppercase; }
+.mt h1 { font-size: 2.5rem; line-height: 1.15; margin: 0; }
+.mt-sub { font-size: 1.1rem; color: #4A5A4F; margin: 18px 0 14px; }
+.mt-com { font-size: .72rem; letter-spacing: .2em; color: #7A857C; margin: 0; }
+.mt-com span { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.1rem; letter-spacing: 0; color: var(--tm-apoio); }
+.mt-abas { background: var(--branco); padding: 44px 0 46px; border-top: 1px solid #E6E3DC; border-bottom: 1px solid #E6E3DC; }
+.mt-nav { display: flex; gap: 6px; border-bottom: 1px solid #E2E5E2; margin-bottom: 34px; }
+.mt-nav button { background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 12px 18px; font: inherit; font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: #7A857C; cursor: pointer; }
+.mt-nav button[aria-selected="true"] { color: var(--tm); border-color: var(--tm); }
+.mt-nav button:hover { color: var(--tm); }
+.mt:not(.mt-js) .mt-nav { display: none; }
+.mt:not(.mt-js) .mt-painel + .mt-painel { margin-top: 40px; }
+.mt-painel ol, .mt-painel ul { list-style: none; margin: 0; padding: 0; }
+.mt-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.mt-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.mt-n { font-family: 'Cinzel', serif; color: #B08F52; }
+.mt-painel h3 { font-size: 1rem; margin: 8px 0; letter-spacing: .04em; }
+.mt-painel p { color: #4A5A4F; line-height: 1.6; margin: 0; }
+.mt-painel .mt-meta { font-size: .82rem; color: var(--tm-apoio); margin: -2px 0 10px; }
+.mt-nota { font-size: .88rem; color: #7A857C !important; margin-top: 26px !important; }
+.mt-val li { border-top: 2px solid var(--tm); padding-top: 16px; }
+.mt-q { font-size: .92rem; }
+.mt-rs { font-family: 'Cinzel', serif; font-size: 1.7rem; color: var(--tm) !important; margin: 6px 0 16px !important; }
+.mt-rs small { font-size: .9rem; }
+.mt-val .btn { padding: 11px 16px; font-size: .68rem; }
+.mt-faq { max-width: 720px; }
+.mt-faq .tm-faq { border-bottom: 1px solid #E2E5E2; padding: 14px 0; }
+.mt-faq .tm-faq summary { cursor: pointer; font-weight: 500; color: #1F2E25; }
+.mt-faq .tm-faq p { margin-top: 8px; }
+.mt-cta { padding: 36px 0; }
+.mt-cta .mt-in2 { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.mt-cta p { font-size: 1.1rem; color: #4A5A4F; margin: 0; }
+.mt-cta b { font-family: 'Cinzel', serif; font-weight: 400; font-size: 1.4rem; color: var(--tm); }
+.mt-aviso { font-size: .78rem; color: #8A938C; margin: 0; padding-bottom: 44px; }
+@media (max-width: 760px) {
+  .mt-in { grid-template-columns: 1fr; gap: 26px; text-align: center; padding: 40px 18px 40px; }
+  .mt-in2 { padding: 0 18px; }
+  .mt-foto { margin: 0 auto; width: 200px; height: 250px; }
+  .mt-marca { justify-content: center; }
+  .mt h1 { font-size: 1.9rem; }
+  .mt-nav { overflow-x: auto; scrollbar-width: none; }
+  .mt-nav button { white-space: nowrap; padding: 12px 10px; letter-spacing: .12em; }
+  .mt-4 { grid-template-columns: 1fr 1fr; gap: 26px; }
+  .mt-3 { grid-template-columns: 1fr; gap: 26px; }
+  .mt-cta .mt-in2 { flex-direction: column; text-align: center; }
+}
+@media (max-width: 760px) {
+  .mt-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; border-bottom: 0; overflow: visible; margin-bottom: 28px; }
+  .mt-nav button { border: 1px solid #D5DBD6; border-radius: 8px; margin: 0; padding: 12px 6px; white-space: normal; font-size: .7rem; letter-spacing: .1em; }
+  .mt-nav button[aria-selected="true"] { background: var(--tm); border-color: var(--tm); color: #fff; }
+  .mt-val .btn { letter-spacing: .12em; padding: 11px 8px; width: 100%; text-align: center; box-sizing: border-box; }
+}
