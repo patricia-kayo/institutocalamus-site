@@ -85,6 +85,14 @@
   var x0=null; t.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; parar(); },{passive:true});
   t.addEventListener('touchend',function(e){ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40) ir(i+(dx<0?1:-1)); x0=null; play(); });
   ir(0); play();
+  /* textos e botões na mesma altura em todos os slides */
+  function iguala(){ ['.s-rotulo','.s-titulo','.s-lead'].forEach(function(sel){
+      var els=c.querySelectorAll('.slide '+sel); var m=0;
+      els.forEach(function(e){ e.style.minHeight=''; });
+      els.forEach(function(e){ m=Math.max(m, e.getBoundingClientRect().height); });
+      els.forEach(function(e){ e.style.minHeight=m+'px'; }); }); }
+  iguala(); window.addEventListener('resize', iguala); window.addEventListener('load', iguala);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(iguala);
 })();
 </script>
 
