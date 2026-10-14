@@ -838,19 +838,6 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .mt-nav button[aria-selected="true"] { background: var(--tm); border-color: var(--tm); color: #fff; }
   .mt-val .btn { letter-spacing: .12em; padding: 11px 8px; width: 100%; text-align: center; box-sizing: border-box; }
 }
-/* Mentoria: abertura verde (opção 2), 14/10/2026 */
-.mt .mt-hero { background: var(--tm); color: #fff; }
-.mt .mt-in { grid-template-columns: 1fr 260px; gap: 60px; padding: 54px 32px; }
-.mt .mt-hero h1 { color: #fff; font-size: 2.4rem; }
-.mt .mt-marca span { color: #fff; }
-.mt .mt-sub { color: #D5DFD8; margin: 18px 0 0; }
-.mt-retrato { margin: 0; text-align: center; }
-.mt .mt-foto { width: 200px; height: 200px; border-radius: 50%; object-position: 50% 25%; margin: 0 auto 14px; box-shadow: 0 0 0 1px #DCC18C, 0 0 0 7px var(--tm), 0 0 0 8px rgba(220,193,140,.4); }
-.mt-retrato figcaption { display: flex; flex-direction: column; gap: 2px; }
-.mt-retrato .mt-com { letter-spacing: 0; white-space: nowrap; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.15rem; color: #fff; }
-.mt-retrato .mt-crm { font-size: .64rem; letter-spacing: .22em; color: #B9C8BE; }
-@media (max-width: 760px) {
-  .mt .mt-in { grid-template-columns: 1fr; gap: 28px; padding: 40px 18px; }
-  .mt .mt-hero h1 { font-size: 1.9rem; }
-  .mt .mt-foto { width: 170px; height: 170px; }
-}
+/* Mentoria: foto em círculo com anel champanhe (como na opção 2), 14/10/2026 */
+.mt .mt-foto { width: 220px; height: 220px; border-radius: 50%; object-position: 50% 25%; margin: 10px; box-shadow: 0 0 0 1px #DCC18C, 0 0 0 7px var(--porcelana), 0 0 0 8px rgba(220,193,140,.5); }
+@media (max-width: 760px) { .mt .mt-foto { width: 180px; height: 180px; margin: 10px auto; } }
