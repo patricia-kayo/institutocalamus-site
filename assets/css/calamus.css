@@ -688,3 +688,4 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 /* Como funciona: corpo de texto num tamanho só */
 #como-funciona .tm-intro, #como-funciona .tm-nota-topo, #como-funciona .tm-passos p { font-size: 1.02rem; line-height: 1.65; color: #1F2E25; }
 #como-funciona .tm-passos strong { font-size: 1.02rem; }
+.tm-etapas.tm-etapas-so { margin-top: 0; }
