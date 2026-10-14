@@ -753,3 +753,28 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .cf-ic svg { width: 24px; height: 24px; }
   .cf-n { top: 20px; font-size: 1.2rem; }
 }
+
+/* ===== Menu lateral fixo (opção A, 14/10/2026) — só em telas largas ===== */
+.ml { display: none; }
+@media (min-width: 1100px) {
+  body { padding-left: 264px; }
+  header.topo { display: none; }
+  .ml { display: flex; flex-direction: column; position: fixed; left: 0; top: 0; bottom: 0; width: 264px; background: var(--branco); border-right: 1px solid var(--linha); padding: 28px 22px; z-index: 20; overflow-y: auto; }
+  .ml-logo img { width: 176px; margin: 4px 6px 30px; display: block; }
+  .ml nav { display: flex; flex-direction: column; gap: 8px; }
+  .ml-it { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border: 1px solid var(--linha); border-radius: 10px; text-decoration: none; color: var(--ameixa-escura); font-size: .98rem; transition: border-color .15s; }
+  .ml-it svg { width: 20px; height: 20px; color: var(--ameixa); flex: none; }
+  .ml-it:hover { border-color: var(--ameixa); }
+  .ml-it[aria-current="page"] { background: var(--ameixa); border-color: var(--ameixa); color: #fff; }
+  .ml-it[aria-current="page"] svg { color: #DCC18C; }
+  .ml-pe { margin-top: auto; padding-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .ml-rot { font-size: .68rem; letter-spacing: .3em; text-transform: uppercase; color: var(--sub); margin-top: 6px; }
+  .ml-cta { display: block; padding: 12px 14px; border-radius: 10px; background: var(--malva-clara); color: var(--ameixa); text-decoration: none; font-weight: 500; font-size: .9rem; }
+  .ml-cta2 { background: #E3EBE5; color: #2F4537; }
+  .ml-cta:hover { filter: brightness(.97); }
+}
+@media (min-width: 1100px) and (max-height: 640px) { .ml-pe { display: none; } }
+@media (min-width: 1100px) { .ml-it[aria-current="page"][href$="mentoria/index.html"] { background: #2F4537; border-color: #2F4537; } }
+/* setas do carrossel ao lado dos pontos, para não cobrir o texto */
+.seta { top: auto; bottom: 16px; transform: none; width: 38px; height: 38px; font-size: 1.5rem; }
+.seta.ant { left: calc(50% - 92px); } .seta.prox { right: calc(50% - 92px); }
