@@ -897,3 +897,14 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 .mt .tm-etapa .tm-intro:empty { margin: 0; }
 .mt .tm-etapa ul { margin-top: 0; align-self: start; }
 @media (max-width: 760px) { .mt .tm-etapa { grid-row: auto; grid-template-rows: none; display: block; } }
+/* Encontros: corpo começa na mesma linha; Valores: preço à direita, lista nova */
+.mt .tm-etapa { grid-row: span 3; }
+.mt .tm-etapa .tm-intro { margin: 0 0 6px; line-height: 1.6; }
+.mt .tm-preco { text-align: right; margin-bottom: 4px; }
+.mt .tm-oferta ul { margin-top: 14px; }
+@media (max-width: 760px) {
+  .mt .tm-ofertas { grid-template-columns: 1fr; }
+  .mt .tm-oferta ul { display: block; }
+  .mt .tm-oferta { padding: 22px 20px; }
+}
+.mt .tm-oferta ul { margin-bottom: 22px; }
