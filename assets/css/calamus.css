@@ -888,3 +888,12 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .mt #sua-jornada .mt-4 li:not(:last-child)::after { top: auto; right: auto; left: 50%; bottom: -24px; transform: translateX(-50%) rotate(90deg); }
   .mt-cab .mt-ic { width: 44px; height: 44px; }
 }
+/* Como são os encontros: título centralizado em caixa alta, tópicos alinhados entre os cards */
+.mt .tm-etapas { grid-auto-rows: auto; }
+.mt .tm-etapa { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; align-content: start; }
+.mt .tm-etapa .tm-fil { margin: 0 auto 18px; }
+.mt .tm-etapa h3 { text-align: center; text-transform: uppercase; letter-spacing: .12em; font-size: .95rem; line-height: 1.4; margin: 0 0 16px; align-self: start; }
+.mt .tm-etapa .tm-intro { margin: 0 0 6px; }
+.mt .tm-etapa .tm-intro:empty { margin: 0; }
+.mt .tm-etapa ul { margin-top: 0; align-self: start; }
+@media (max-width: 760px) { .mt .tm-etapa { grid-row: auto; grid-template-rows: none; display: block; } }
