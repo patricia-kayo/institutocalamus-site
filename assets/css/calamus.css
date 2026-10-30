@@ -957,3 +957,13 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
   .hh-pontos { margin-top: 20px; }
   .hh-palco { height: 380px; }
 }
+
+/* ===== Banner do Sistema de Gestão Pericial (30/10/2026) ===== */
+.banner-gp { background: #0B0610; line-height: 0; }
+.banner-gp a { display: block; }
+.banner-gp img, .lp-banner img { display: block; width: 100%; height: auto; }
+.lp-banner { line-height: 0; }
+.lp-hero-cta { padding: 34px 0 30px; }
+body.lp .lp-hero-cta .lp-preco { justify-content: center; }
+body.lp .lp-hero-cta .lp-wrap { display: block; text-align: center; }
+.lp-hero-cta .lp-caps { margin-bottom: 18px; }
