@@ -925,39 +925,6 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 @media (max-width: 760px) { .hero.interna.compacta .dagua { width: 220px; bottom: -130px; right: 8px; } }
 .hero.interna.compacta .dagua { display: none; }
 
-/* ===== Abertura animada da página inicial (17/10/2026) ===== */
-.hh { position: relative; overflow: hidden; background: radial-gradient(ellipse at 72% 50%, #3B1D38 0%, #24111F 58%, #190B16 100%); }
-.hh-g { display: grid; grid-template-columns: .85fr 1.15fr; gap: 40px; align-items: center; height: 580px; }
-.hh-logo { width: 100%; max-width: 420px; height: auto; display: block; }
-.hh-frase { font-family: "EB Garamond", Georgia, serif; font-style: italic; font-size: clamp(1.35rem, 2vw, 1.75rem); line-height: 1.38; margin: 28px 0 0; max-width: 17em;
-  color: #F3ECE8; border-left: 2px solid #DCC18C; padding-left: 22px; }
-.hh-pontos { list-style: none; display: flex; gap: 8px; padding: 0; margin: 34px 0 0; }
-.hh-pontos li { width: 22px; height: 3px; background: #DCC18C; opacity: .3; transition: opacity .6s, width .6s; }
-.hh-pontos li.on { opacity: 1; width: 40px; }
-.hh-palco { position: relative; height: 560px; }
-#mundo { position: absolute; inset: 0; width: 100%; height: 100%; transition: opacity 1s; }
-#mundo .rot { font: 500 5.4px "Jost", sans-serif; letter-spacing: .22em; fill: #8A6A55; }
-#mundo .rot-uv { font: 500 9px "Jost", sans-serif; letter-spacing: .22em; fill: #CFC2FF; }
-#notas, #lupa { transition: opacity .8s; }
-.mic { position: absolute; left: 50%; top: 50%; width: 0; height: 0; border-radius: 50%; overflow: hidden; opacity: 0; pointer-events: none;
-  box-shadow: 0 0 0 10px #2A1727, 0 0 0 11px rgba(220,193,140,.35), 0 30px 80px rgba(0,0,0,.6); }
-.mic.anima { transition: left 1.1s cubic-bezier(.6,0,.2,1), top 1.1s cubic-bezier(.6,0,.2,1), width 1.1s cubic-bezier(.6,0,.2,1), height 1.1s cubic-bezier(.6,0,.2,1), opacity .9s; }
-.mic canvas { width: 100%; height: 100%; display: block; }
-.mic canvas.foco { animation: foco 1.8s cubic-bezier(.3,.1,.2,1) forwards; }
-@keyframes foco { 0% { filter: blur(16px) brightness(.75); } 70% { filter: blur(1px); } 100% { filter: none; } }
-.mic::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, transparent 58%, rgba(10,4,9,.75) 100%); }
-.mic .reticulo { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; }
-.mic .reticulo text { font: 500 11px "Jost", sans-serif; letter-spacing: .2em; fill: #DCC18C; }
-@media (prefers-reduced-motion: reduce) { .mic, #mundo { transition: none; } }
-@media (max-width: 1099px) { .hh-g { grid-template-columns: .8fr 1.2fr; gap: 24px; } }
-@media (max-width: 760px) {
-  .hh-g { grid-template-columns: 1fr; height: auto; gap: 8px; padding: 34px 0 10px; }
-  .hh-logo { max-width: 270px; }
-  .hh-frase { font-size: 1.15rem; margin-top: 18px; padding-left: 16px; }
-  .hh-pontos { margin-top: 20px; }
-  .hh-palco { height: 380px; }
-}
-
 /* ===== Banner do Sistema de Gestão Pericial (30/10/2026) ===== */
 .banner-gp { background: #0B0610; line-height: 0; }
 .banner-gp a { display: block; }
@@ -967,54 +934,3 @@ h3 { font-family: "Jost", Arial, sans-serif; font-weight: 500; font-size: 1.2rem
 body.lp .lp-hero-cta .lp-preco { justify-content: center; }
 body.lp .lp-hero-cta .lp-wrap { display: block; text-align: center; }
 .lp-hero-cta .lp-caps { margin-bottom: 18px; }
-
-/* ===== Página inicial em telas (opção B: porcelana com faixas), 01/11/2026 ===== */
-@font-face{font-family:Montserrat;src:url(../fonts/montserrat-latin-300-normal.woff2) format("woff2");font-weight:300}
-@font-face{font-family:Montserrat;src:url(../fonts/montserrat-latin-500-normal.woff2) format("woff2");font-weight:500}
-@font-face{font-family:Montserrat;src:url(../fonts/montserrat-latin-600-normal.woff2) format("woff2");font-weight:600}
-.nv{--fundo:#F7F4EE;--tx:#2A1428;--sub:#5E4B5A;--ouro:#A8823F;--luz:rgba(255,236,196,.95)}
-.nv-sec{position:relative;overflow:hidden;padding:110px 24px 100px;background:var(--fundo);color:var(--tx)}
-.nv-centro{position:relative;z-index:2;max-width:720px;margin:0 auto;text-align:center}
-.nv-rot{font-family:Montserrat;font-weight:500;font-size:.78rem;letter-spacing:.34em;text-transform:uppercase;color:var(--ouro);margin:0 0 18px}
-.nv h2{font-family:Montserrat;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.12;font-size:clamp(2rem,4vw,3.2rem);margin:0;color:var(--tx)}
-.nv h2 b{font-weight:600;color:var(--ouro)}
-.nv-fio{width:72px;height:3px;margin:26px auto;background:linear-gradient(90deg,rgba(176,143,82,0),#C9A766,rgba(176,143,82,0))}
-.nv-centro p{font-size:1.14rem;line-height:1.65;font-weight:300;color:var(--sub);margin:0}
-.nv-btn{display:inline-block;margin-top:8px;padding:18px 42px;border-radius:70px;background:linear-gradient(180deg,#F3E1B8,#DCC08A);font-family:Montserrat;font-weight:600;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:#3A1736;text-decoration:none;
-  box-shadow:inset 0 0 0 1px rgba(255,244,220,.85),0 14px 30px rgba(74,35,70,.18),0 0 30px rgba(233,207,152,.45);transition:transform .2s}
-.nv-btn:hover{transform:translateY(-2px)}
-.nv-btn-2{background:transparent;box-shadow:inset 0 0 0 1px var(--ouro);color:var(--tx)}
-.nv-crm{font-family:Montserrat;font-size:.72rem!important;letter-spacing:.24em;text-transform:uppercase;margin:0 0 22px!important}
-/* palco 3D com foco de luz */
-.nv-palco{position:relative;height:430px;margin:40px auto 30px;max-width:980px;perspective:1400px;display:flex;align-items:center;justify-content:center}
-.nv-palco.curto{height:300px}.nv-palco.alto{height:600px}
-.nv-cone{position:absolute;left:50%;top:-40px;width:760px;height:620px;transform:translateX(-50%);pointer-events:none;
-  background:linear-gradient(180deg,var(--luz) 0%,rgba(255,236,196,0) 90%);clip-path:polygon(40% 0,60% 0,100% 100%,0 100%);opacity:.55;filter:blur(6px)}
-.nv-chao{position:absolute;left:50%;bottom:-6px;width:640px;height:90px;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 50%,rgba(74,35,70,.22),transparent 70%);filter:blur(8px)}
-.p3d{position:relative;z-index:1;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),opacity 1.2s;opacity:0}
-.p3d.vis{opacity:1}
-.nv-leque{display:flex;gap:0;transform:rotateX(40deg) translateY(80px) scale(.9)}
-.nv-leque.vis{transform:rotateX(14deg) translateY(0) scale(1)}
-.nv-leque img{width:220px;box-shadow:0 30px 50px rgba(42,20,40,.35);border-radius:3px;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
-.nv-leque img:nth-child(1){transform:translateX(40px) rotate(-4deg) translateZ(-40px)}
-.nv-leque img:nth-child(3){transform:translateX(-40px) rotate(4deg) translateZ(-40px)}
-.nv-leque img:nth-child(2){z-index:2;transform:translateZ(30px)}
-.nv-leque.vis img:nth-child(1){transform:translateX(10px) rotate(-7deg) translateZ(-40px)}
-.nv-leque.vis img:nth-child(3){transform:translateX(-10px) rotate(7deg) translateZ(-40px)}
-.nv-tela{width:min(760px,92%);border-radius:14px;box-shadow:0 40px 80px rgba(42,20,40,.28),0 0 0 1px rgba(176,143,82,.25);transform:rotateX(38deg) translateY(90px) scale(.88)}
-.nv-tela.vis{transform:rotateX(16deg) rotateZ(-1deg) translateY(0) scale(1)}
-.nv-m{height:200px;filter:drop-shadow(0 20px 30px rgba(47,69,55,.35)) drop-shadow(0 0 30px rgba(233,207,152,.6));transform:rotateY(-60deg) scale(.8)}
-.nv-m.vis{transform:rotateY(0) scale(1)}
-.rev{opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}
-.rev.vis{opacity:1;transform:none}
-.nv-lista{list-style:none;max-width:760px;margin:40px auto 30px;padding:0}
-.nv-lista li{display:flex;gap:26px;align-items:baseline;padding:22px 0;border-bottom:1px solid rgba(176,143,82,.3)}
-.nv-lista .nv-pilar{flex:none;width:150px;font-family:Montserrat;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro)}
-.nv-lista a{font-family:Montserrat;font-weight:300;font-size:1.25rem;color:var(--tx);text-decoration:none}
-@media(max-width:760px){.nv-palco.alto{height:320px}.nv-sec{padding:72px 18px 64px}.nv-palco{height:300px}.nv-leque img{width:120px}.nv-cone{width:420px}.nv-lista li{flex-direction:column;gap:6px}.nv-m{height:140px}}
-/* Porcelana + faixa ameixa */ .s2{--fundo:radial-gradient(ellipse 80% 70% at 50% 0%,#5A2A55 0%,#3A1736 60%,#2A1128 100%);--tx:#F6EEE4;--sub:#E2D3DC;--ouro:#E9CF98;--luz:rgba(255,236,196,.7)}
- .s2 .nv-chao{background:radial-gradient(ellipse,rgba(0,0,0,.45),transparent 70%)} .s3{--fundo:#E3EBE5;--ouro:#2F4537;--sub:#3E5446}
-.nv-lista .nv-pilar{flex:none;width:150px;font-family:Montserrat;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro)}
-.nv-lista .nv-tit{font-family:Montserrat;font-weight:300;font-size:1.25rem;color:var(--tx)}
-@media (prefers-reduced-motion: reduce){.rev,.p3d,.nv-leque img{transition:none!important}}
-
