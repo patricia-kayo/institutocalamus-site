@@ -16,163 +16,81 @@
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon_192px.png">
 <link rel="apple-touch-icon" href="../assets/img/favicon_192px.png">
 <link rel="preload" href="../assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/calamus.css">
+<link rel="preload" href="../assets/fonts/Cinzel-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/site.js" defer></script>
 </head>
 <body>
-<aside class="ml" aria-label="Menu lateral">
-  <a class="ml-logo" href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/logo-cor.svg" alt="Instituto Calamus"></a>
-  <nav aria-label="Principal"><a class="ml-it" href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg><span>Início</span></a><a class="ml-it" href="../artigos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg><span>Artigos</span></a><a class="ml-it" href="../produtos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Produtos Periciais</span></a><a class="ml-it" aria-current="page" href="../mentoria/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="2"/></svg><span>Mentoria para Médicos</span></a><a class="ml-it" href="../sobre/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Sobre</span></a></nav>
+<aside class="lat" aria-label="Menu">
+  <a class="lat-logo" href="../index.html"><img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus, página inicial"></a>
+  <nav class="lat-nav" aria-label="Principal">
+    <div class="lat-principal">
+      <a href="../index.html">Início</a>
+      <a href="../produtos/index.html">Produtos Periciais</a>
+      <a class="sub" href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a>
+      <a href="../artigos/index.html">Artigos</a>
+      <a href="../sobre/index.html">Sobre</a>
+    </div>
+    <p class="lat-rot">Também no instituto</p>
+    <a class="ativo" aria-current="page" href="../mentoria/index.html">Mentoria para médicos</a>
+  </nav>
+  <div class="lat-pe"><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
 </aside>
-<header class="topo">
-  <div class="wrap">
-    <a class="marca" href="../index.html" aria-label="Instituto Calamus, página inicial"><img class="marca-logo" src="../assets/img/logo-cor.svg" alt="Instituto Calamus"><img class="marca-mono" src="../assets/img/monograma-capa-claro.svg" alt="Instituto Calamus"></a>
-    <nav class="menu" aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos Periciais</a><a href="../mentoria/index.html" aria-current="page">Mentoria para Médicos</a><a href="../sobre/index.html">Sobre</a></nav>
-    <details class="menu-movel"><summary>Menu</summary><nav aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos Periciais</a><a href="../mentoria/index.html" aria-current="page">Mentoria para Médicos</a><a href="../sobre/index.html">Sobre</a></nav></details>
-  </div>
+<header class="topo-movel">
+  <a href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/monograma-principal-claro.svg" alt="Instituto Calamus"></a>
+  <details><summary>Menu</summary><nav aria-label="Principal"><a href="../produtos/index.html">Produtos Periciais</a><a class="sub" href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="../artigos/index.html">Artigos</a><a href="../sobre/index.html">Sobre</a><a class="ativo" aria-current="page" href="../mentoria/index.html">Mentoria para médicos</a></nav></details>
 </header>
+<div class="pagina">
 <main>
-<div class="tema-mentoria mt">
-<section class="mt-hero">
-  <img class="mt-dagua" src="../assets/img/monograma-salvia-escura.svg" alt="" aria-hidden="true">
-  <div class="mt-in">
-  <img class="mt-foto" src="../assets/img/emanuel-bracos.jpg" alt="Dr. Emanuel Behrens">
-  <div>
-    <p class="mt-marca"><img src="../assets/img/mentoria/simbolo-claro.svg" alt=""><span>Mentoria</span></p>
-    <h1><span>Do diploma ao</span> <span>mercado de trabalho</span></h1>
-    <p class="mt-sub">Orientação de carreira e discussão de casos clínicos para médicos recém-formados.</p>
-    <p class="mt-com"><span>Com Dr. Emanuel Behrens</span> · <span>Médico · CRM-SC 28.919</span></p>
+<div class="tema-mentoria">
+<section class="mentoria" aria-labelledby="t-mentoria">
+  <div class="m-esq">
+    <p class="rotulo">Para médicos recém-formados</p>
+    <h1 class="m-titulo" id="t-mentoria">Mentoria</h1>
+    <p class="quem">Acompanhamento com <strong>Dr. Emanuel Behrens</strong></p>
   </div>
-</div></section>
-
-<section class="mt-abas"><div class="mt-in2">
-  <div class="mt-nav" role="tablist" aria-label="Sobre a mentoria"><button type="button" role="tab" id="aba-sua-jornada" aria-controls="sua-jornada" aria-selected="true">Sua jornada</button><button type="button" role="tab" id="aba-encontros" aria-controls="encontros" aria-selected="false" tabindex="-1">Como são os encontros</button><button type="button" role="tab" id="aba-valores" aria-controls="valores" aria-selected="false" tabindex="-1">Valores</button><button type="button" role="tab" id="aba-duvidas" aria-controls="duvidas" aria-selected="false" tabindex="-1">Dúvidas</button></div>
-  <div class="mt-painel" role="tabpanel" id="sua-jornada" aria-labelledby="aba-sua-jornada"><h2 class="sr-only">Sua jornada</h2>
-    <ol class="mt-4"><li><div class="mt-cab"><span class="mt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg></span><h3>Inscrição</h3></div><p>Depois da compra, entramos em contato para agendar e você preenche o formulário de entrada.</p></li><li><div class="mt-cab"><span class="mt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg></span><h3>Encontros iniciais</h3></div><p>Orientação de carreira e Bastidores da Profissão, antes de você começar a trabalhar.</p></li><li><div class="mt-cab"><span class="mt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-4 8 4v13"/><path d="M2 21h20"/><path d="M12 9v6M9 12h6"/><path d="M10 21v-3h4v3"/></svg></span><h3>Primeiro trabalho</h3></div><p>As assessorias começam a contar no seu primeiro plantão ou no início na UBS.</p></li><li><div class="mt-cab"><span class="mt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M4 3h4M14 3h4"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="2"/></svg></span><h3>Assessoria</h3></div><p>Encontros semanais com o Dr. Emanuel, usados em até 90 dias.</p></li></ol>
-    <p class="mt-nota">Encontros individuais, por videoconferência, em horários combinados com você.</p></div>
-  <div class="mt-painel" role="tabpanel" id="encontros" aria-labelledby="aba-encontros"><h2 class="sr-only">Como são os encontros</h2>
-    <div class="tm-etapas tm-etapas-so"><article class="tm-etapa">
-  <span class="tm-fil"></span>
-  <h3>Orientação de carreira</h3>
-  <div class="tm-corpo"><ul><li>Diagnóstico do seu momento: trabalhar, estudar para a residência ou conciliar</li><li>Portas de entrada no mercado: UBS, UPA, pronto-socorro e plantões</li><li>Como funciona um plantão, na prática</li><li>Residência, escolha da especialidade e rotina de estudo</li><li>Plano de ação para os próximos 90 dias</li></ul></div>
-</article><article class="tm-etapa">
-  <span class="tm-fil"></span>
-  <h3>Bastidores da Profissão</h3>
-  <div class="tm-corpo"><p class="tm-texto tm-intro">Informações sobre:</p><ul><li>CNPJ</li><li>Como escolher o contador</li><li>Responsabilidade civil</li><li>Imposto de renda</li><li>E mais.</li></ul></div>
-</article><article class="tm-etapa">
-  <span class="tm-fil"></span>
-  <h3>Assessoria de casos clínicos</h3>
-  <div class="tm-corpo"><ul><li>Discussão dos casos que você atendeu na semana</li><li>Raciocínio clínico, diagnóstico diferencial e sinais de alarme</li><li>O que estava adequado e o que poderia ser diferente</li><li>Como o caso deveria estar registrado no prontuário</li><li>Casos sempre anonimizados e discutidos depois do atendimento</li></ul></div>
-</article></div></div>
-  <div class="mt-painel" role="tabpanel" id="valores" aria-labelledby="aba-valores"><h2 class="sr-only">Valores</h2>
-    <div class="tm-ofertas"><article class="tm-oferta">
-  <p class="tm-preco"><small>R$</small> 1.797</p>
-  <p class="tm-qtd"><span>1</span> assessoria</p>
-  <ul>
-    <li>Orientação de carreira</li>
-    <li>Orientação de estudos</li>
-    <li>Bastidores da Profissão</li>
-    <li>1 assessoria de casos clínicos</li>
-    <li>Pagamento em Pix, boleto ou cartão</li>
-  </ul>
-  <a class="btn tm-btn" href="https://mpago.la/13HjeiV" target="_blank" rel="noopener">Contratar</a>
-</article><article class="tm-oferta">
-  <p class="tm-preco"><small>R$</small> 2.397</p>
-  <p class="tm-qtd"><span>2</span> assessorias</p>
-  <ul>
-    <li>Orientação de carreira</li>
-    <li>Orientação de estudos</li>
-    <li>Bastidores da Profissão</li>
-    <li>2 assessorias de casos clínicos</li>
-    <li>Pagamento em Pix, boleto ou cartão</li>
-  </ul>
-  <a class="btn tm-btn" href="https://mpago.la/2tJH21s" target="_blank" rel="noopener">Contratar</a>
-</article><article class="tm-oferta">
-  <p class="tm-preco"><small>R$</small> 2.897</p>
-  <p class="tm-qtd"><span>3</span> assessorias</p>
-  <ul>
-    <li>Orientação de carreira</li>
-    <li>Orientação de estudos</li>
-    <li>Bastidores da Profissão</li>
-    <li>3 assessorias de casos clínicos</li>
-    <li>Pagamento em Pix, boleto ou cartão</li>
-  </ul>
-  <a class="btn tm-btn" href="https://mpago.la/17SBFgG" target="_blank" rel="noopener">Contratar</a>
-</article><article class="tm-oferta">
-  <p class="tm-preco"><small>R$</small> 3.397</p>
-  <p class="tm-qtd"><span>4</span> assessorias</p>
-  <ul>
-    <li>Orientação de carreira</li>
-    <li>Orientação de estudos</li>
-    <li>Bastidores da Profissão</li>
-    <li>4 assessorias de casos clínicos</li>
-    <li>Pagamento em Pix, boleto ou cartão</li>
-  </ul>
-  <a class="btn tm-btn" href="https://mpago.la/2fNDRQM" target="_blank" rel="noopener">Contratar</a>
-</article></div></div>
-  <div class="mt-painel" role="tabpanel" id="duvidas" aria-labelledby="aba-duvidas"><h2 class="sr-only">Dúvidas</h2>
-    <div class="mt-faq"><details class="tm-faq"><summary>Quem pode participar?</summary><p>Médicos que já colaram grau e têm inscrição ativa no CRM. A mentoria é para quem está no início da prática profissional.</p></details><details class="tm-faq"><summary>Como são os encontros?</summary><p>Individuais, por videoconferência, em horários combinados com você. Depois da compra, entramos em contato para agendar e você preenche o formulário de entrada.</p></details><details class="tm-faq"><summary>Ainda não comecei a trabalhar. Posso me inscrever?</summary><p>Pode. O ideal é que os encontros iniciais aconteçam antes de você iniciar no trabalho. As assessorias passam a contar a partir do primeiro plantão ou do início na UBS. A partir daí, você tem 90 dias para usá-las.</p></details><details class="tm-faq"><summary>Como os casos são discutidos?</summary><p>Sempre de forma anonimizada, sem nome, prontuário, foto ou qualquer dado que identifique o paciente, e sempre depois do atendimento. A discussão é educacional: a conduta e o registro continuam sendo do médico que atendeu. Todos os participantes assinam um termo de sigilo.</p></details><details class="tm-faq"><summary>Posso falar com o Dr. Emanuel durante o plantão?</summary><p>Não. A mentoria não inclui orientação em tempo real sobre pacientes em atendimento.</p></details><details class="tm-faq"><summary>O encontro Bastidores da Profissão substitui um contador?</summary><p>Não. O encontro Bastidores da Profissão traz informações sobre CNPJ, como escolher o contador, responsabilidade civil, imposto de renda e mais. Para a sua situação específica, procure um contador.</p></details><details class="tm-faq"><summary>Como é o pagamento?</summary><p>Pelo Mercado Pago, em Pix, boleto ou cartão (com parcelamento). Cada opção de valor tem o seu próprio link de pagamento.</p></details></div></div>
-</div></section>
-
-<div class="mt-in2"><p class="mt-aviso">A mentoria é uma atividade educacional entre médicos. Não é atendimento a pacientes, não inclui orientação em tempo real e não garante resultados. Casos clínicos são discutidos sem dados que identifiquem pacientes.</p></div>
-</div>
-<script>
-(function(){
-  var raiz=document.querySelector('.mt'); if(!raiz) return; raiz.classList.add('mt-js');
-  var tabs=[].slice.call(raiz.querySelectorAll('[role=tab]'));
-  function abre(id, foco){
-    tabs.forEach(function(t){ var on=t.getAttribute('aria-controls')===id;
-      t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden=!on; if(on&&foco) t.focus(); });
-  }
-  tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){ abre(t.getAttribute('aria-controls')); history.replaceState(null,'','#'+t.getAttribute('aria-controls')); });
-    t.addEventListener('keydown',function(e){ var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!k) return;
-      var n=tabs[(i+k+tabs.length)%tabs.length]; abre(n.getAttribute('aria-controls'),true); });
-  });
-  [].forEach.call(raiz.querySelectorAll('[data-aba]'),function(a){ a.addEventListener('click',function(e){ e.preventDefault();
-    abre(a.dataset.aba); raiz.querySelector('.mt-abas').scrollIntoView({behavior:'smooth'}); }); });
-  var h=location.hash.slice(1); abre(document.getElementById(h)&&tabs.some(function(t){return t.getAttribute('aria-controls')===h;})?h:'sua-jornada');
-})();
-</script>
-</main>
-<footer class="rodape">
-  <div class="wrap">
-    <div class="rodape-grade">
+  <div class="m-dir">
+    <div class="m-apres">
+      <img src="../assets/img/emanuel-bracos.jpg" alt="Dr. Emanuel Behrens" width="720" height="720">
       <div>
-        <img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus">
-        <p>Conteúdo e produtos para quem atua ou quer atuar na perícia.</p>
+        <p class="m-crm">Dr. Emanuel Behrens · Médico · CRM-SC 28.919</p>
+        <p class="texto">Orientação de carreira, o encontro Bastidores da Profissão e, se você quiser, de uma a quatro assessorias de casos clínicos de 1h30 depois que você começar a trabalhar.</p>
       </div>
-      <div><h4>Conteúdo</h4><ul>
-        <li><a href="../artigos/index.html">Artigos</a></li>
-        
-        <li><a href="../mentoria/index.html">Mentoria</a></li>
-        </ul></div>
-      <div><h4>Loja</h4><ul>
-        <li><a href="../produtos/index.html">Produtos</a></li>
-        <li><a href="../produtos/index.html#para-comecar">Para começar</a></li>
-        <li><a href="../produtos/index.html#organizacao">Organização</a></li></ul></div>
-      <div><h4>Contato</h4><ul>
-        <li><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></li>
-        <li><a href="../sobre/index.html">Sobre o instituto</a></li></ul></div>
     </div>
-    <div class="legal">
-      Instituto Calamus<br>
-      Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
-      © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.
-    </div>
+    <div class="planos" id="valores"><a class="plano" href="https://mpago.la/13HjeiV" target="_blank" rel="noopener" aria-label="Contratar: Orientação + 1 assessoria, R$ 1.797"><span class="q">Orientação + 1 assessoria</span><span class="v">R$ 1.797</span><span class="p">até 10x</span></a><a class="plano" href="https://mpago.la/2tJH21s" target="_blank" rel="noopener" aria-label="Contratar: Orientação + 2 assessorias, R$ 2.397"><span class="q">Orientação + 2 assessorias</span><span class="v">R$ 2.397</span><span class="p">até 10x</span></a><a class="plano" href="https://mpago.la/17SBFgG" target="_blank" rel="noopener" aria-label="Contratar: Orientação + 3 assessorias, R$ 2.897"><span class="q">Orientação + 3 assessorias</span><span class="v">R$ 2.897</span><span class="p">até 10x</span></a><a class="plano" href="https://mpago.la/2fNDRQM" target="_blank" rel="noopener" aria-label="Contratar: Orientação + 4 assessorias, R$ 3.397"><span class="q">Orientação + 4 assessorias</span><span class="v">R$ 3.397</span><span class="p">até 10x</span></a></div>
+    <p class="m-nota">Todas as opções incluem orientação de carreira, orientação de estudos e Bastidores da Profissão. Pagamento pelo Mercado Pago, em Pix, boleto ou cartão.</p>
   </div>
-</footer>
-<script>
-/* deixa "Para médicos recém-formados" exatamente da largura de MENTORIA */
-(function(){
-  function ajusta(){ document.querySelectorAll(".m-cabeca").forEach(function(c){
-    var t=c.querySelector(".m-titulo"), s=c.querySelector(".ajusta"); if(!t||!s) return;
-    s.style.fontSize="20px"; var w=s.getBoundingClientRect().width, W=t.getBoundingClientRect().width;
-    var ft=parseFloat(getComputedStyle(t).fontSize), ls=parseFloat(getComputedStyle(s).letterSpacing)/20||0.12;
-    /* compara só a largura das letras (sem o espaçamento depois da última) */
-    if(w>0) s.style.fontSize=(20*(W-0.14*ft)/(w-ls*20))+"px"; }); }
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajusta); window.addEventListener("load",ajusta); window.addEventListener("resize",ajusta); ajusta();
-})();
-</script>
+</section>
+
+<section class="secao" id="sua-jornada" aria-labelledby="t-jornada"><div class="wrap">
+  <div class="cab-secao"><div><span class="filete"></span><p class="rotulo">Como funciona</p><h2 class="h2" id="t-jornada">Sua jornada</h2></div></div>
+  <ol class="passos"><li><span class="n">01</span><h3>Inscrição</h3><p>Depois da compra, entramos em contato para agendar e você preenche o formulário de entrada.</p></li><li><span class="n">02</span><h3>Encontros iniciais</h3><p>Orientação de carreira e Bastidores da Profissão, antes de você começar a trabalhar.</p></li><li><span class="n">03</span><h3>Primeiro trabalho</h3><p>As assessorias começam a contar no seu primeiro plantão ou no início na UBS.</p></li><li><span class="n">04</span><h3>Assessoria</h3><p>Encontros semanais com o Dr. Emanuel, usados em até 90 dias.</p></li></ol>
+  <p class="m-nota">Encontros individuais, por videoconferência, em horários combinados com você.</p>
+</div></section>
+
+<section class="secao branca" id="encontros" aria-labelledby="t-encontros"><div class="wrap">
+  <div class="cab-secao"><div><span class="filete"></span><p class="rotulo">O que acontece em cada um</p><h2 class="h2" id="t-encontros">Os encontros</h2></div></div>
+  <ul class="encontros"><li><p class="em">1º encontro · com Dr. Emanuel Behrens</p><h3>Orientação de carreira</h3><p>Seu momento, portas de entrada no mercado, como funciona um plantão, residência e um plano para os próximos 90 dias.</p></li><li><p class="em">1 encontro de 1h</p><h3>Bastidores da Profissão</h3><p>Informações sobre CNPJ, como escolher o contador, responsabilidade civil, imposto de renda e mais.</p></li><li><p class="em">de 1 a 4 encontros de 1h30 · com Dr. Emanuel Behrens</p><h3>Assessoria de casos clínicos</h3><p>Discussão dos casos que você atendeu, sempre anonimizados e depois do atendimento.</p></li></ul>
+</div></section>
+
+<section class="secao" id="duvidas" aria-labelledby="t-duvidas"><div class="wrap">
+  <div class="cab-secao"><div><span class="filete"></span><p class="rotulo">Antes de contratar</p><h2 class="h2" id="t-duvidas">Dúvidas</h2></div></div>
+  <div class="faq"><details><summary>Quem pode participar?</summary><p>Médicos que já colaram grau e têm inscrição ativa no CRM. A mentoria é para quem está no início da prática profissional.</p></details><details><summary>Como são os encontros?</summary><p>Individuais, por videoconferência, em horários combinados com você. Depois da compra, entramos em contato para agendar e você preenche o formulário de entrada.</p></details><details><summary>Ainda não comecei a trabalhar. Posso me inscrever?</summary><p>Pode. O ideal é que os encontros iniciais aconteçam antes de você iniciar no trabalho. As assessorias passam a contar a partir do primeiro plantão ou do início na UBS. A partir daí, você tem 90 dias para usá-las.</p></details><details><summary>Como os casos são discutidos?</summary><p>Sempre de forma anonimizada, sem nome, prontuário, foto ou qualquer dado que identifique o paciente, e sempre depois do atendimento. A discussão é educacional: a conduta e o registro continuam sendo do médico que atendeu. Todos os participantes assinam um termo de sigilo.</p></details><details><summary>Posso falar com o Dr. Emanuel durante o plantão?</summary><p>Não. A mentoria não inclui orientação em tempo real sobre pacientes em atendimento.</p></details><details><summary>O encontro Bastidores da Profissão substitui um contador?</summary><p>Não. O encontro Bastidores da Profissão traz informações sobre CNPJ, como escolher o contador, responsabilidade civil, imposto de renda e mais. Para a sua situação específica, procure um contador.</p></details><details><summary>Como é o pagamento?</summary><p>Pelo Mercado Pago, em Pix, boleto ou cartão (com parcelamento). Cada opção de valor tem o seu próprio link de pagamento.</p></details></div>
+  <p class="aviso">A mentoria é uma atividade educacional entre médicos. Não é atendimento a pacientes, não inclui orientação em tempo real e não garante resultados. Casos clínicos são discutidos sem dados que identifiquem pacientes.</p>
+</div></section>
+</div>
+</main>
+<footer class="rodape"><div class="wrap">
+  <div class="rod-grade">
+    <div><img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus"><p class="frase">Conteúdo e produtos para quem atua ou quer atuar na perícia.</p></div>
+    <div><p class="rod-tit">Conteúdo</p><a href="../artigos/index.html">Artigos</a><a href="../sobre/index.html">Sobre</a></div>
+    <div><p class="rod-tit">Loja</p><a href="../produtos/index.html">Produtos Periciais</a><a href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="../mentoria/index.html">Mentoria para médicos</a></div>
+    <div><p class="rod-tit">Contato</p><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
+  </div>
+  <p class="legal">Instituto Calamus<br>
+    Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
+    © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.</p>
+</div></footer>
+</div>
 </body>
 </html>

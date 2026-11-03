@@ -16,91 +16,82 @@
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon_192px.png">
 <link rel="apple-touch-icon" href="../assets/img/favicon_192px.png">
 <link rel="preload" href="../assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/calamus.css">
+<link rel="preload" href="../assets/fonts/Cinzel-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/site.js" defer></script>
 </head>
 <body>
-<aside class="ml" aria-label="Menu lateral">
-  <a class="ml-logo" href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/logo-cor.svg" alt="Instituto Calamus"></a>
-  <nav aria-label="Principal"><a class="ml-it" href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg><span>Início</span></a><a class="ml-it" href="../artigos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg><span>Artigos</span></a><a class="ml-it" href="../produtos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Produtos Periciais</span></a><a class="ml-it" href="../mentoria/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="2"/></svg><span>Mentoria para Médicos</span></a><a class="ml-it" aria-current="page" href="../sobre/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Sobre</span></a></nav>
+<aside class="lat" aria-label="Menu">
+  <a class="lat-logo" href="../index.html"><img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus, página inicial"></a>
+  <nav class="lat-nav" aria-label="Principal">
+    <div class="lat-principal">
+      <a href="../index.html">Início</a>
+      <a href="../produtos/index.html">Produtos Periciais</a>
+      <a class="sub" href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a>
+      <a href="../artigos/index.html">Artigos</a>
+      <a class="ativo" aria-current="page" href="../sobre/index.html">Sobre</a>
+    </div>
+    <p class="lat-rot">Também no instituto</p>
+    <a href="../mentoria/index.html">Mentoria para médicos</a>
+  </nav>
+  <div class="lat-pe"><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
 </aside>
-<header class="topo">
-  <div class="wrap">
-    <a class="marca" href="../index.html" aria-label="Instituto Calamus, página inicial"><img class="marca-logo" src="../assets/img/logo-cor.svg" alt="Instituto Calamus"><img class="marca-mono" src="../assets/img/monograma-capa-claro.svg" alt="Instituto Calamus"></a>
-    <nav class="menu" aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos Periciais</a><a href="../mentoria/index.html">Mentoria para Médicos</a><a href="../sobre/index.html" aria-current="page">Sobre</a></nav>
-    <details class="menu-movel"><summary>Menu</summary><nav aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html">Produtos Periciais</a><a href="../mentoria/index.html">Mentoria para Médicos</a><a href="../sobre/index.html" aria-current="page">Sobre</a></nav></details>
-  </div>
+<header class="topo-movel">
+  <a href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/monograma-principal-claro.svg" alt="Instituto Calamus"></a>
+  <details><summary>Menu</summary><nav aria-label="Principal"><a href="../produtos/index.html">Produtos Periciais</a><a class="sub" href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="../artigos/index.html">Artigos</a><a class="ativo" aria-current="page" href="../sobre/index.html">Sobre</a><a href="../mentoria/index.html">Mentoria para médicos</a></nav></details>
 </header>
+<div class="pagina">
 <main>
-<section class="hero interna">
-  <img class="dagua" src="../assets/img/monograma-ameixa.svg" alt="" aria-hidden="true">
-  <div class="wrap">
-    <p class="rotulo">Sobre</p>
-    <h1>Instituto Calamus</h1>
-    <p class="italico">Da origem do traço à conclusão.</p>
-    <p class="lead">O Instituto Calamus reúne conteúdo, produtos e mentoria em duas frentes: a perícia, especialmente a grafoscopia, e a formação médica.</p>
+<section class="topo-pagina"><div class="wrap">
+  <p class="rotulo">Sobre</p>
+  <h1 class="h1">Instituto Calamus</h1>
+  <span class="barra"></span>
+  <p class="lead">O Instituto Calamus reúne conteúdo, produtos e mentoria em duas frentes: a perícia, especialmente a grafoscopia, e a formação médica.</p><p class="italico">Da origem do traço à conclusão.</p>
+</div></section>
+<section class="secao branca sobre" aria-labelledby="t-nome"><div class="wrap sobre-grade">
+  <div><span class="filete"></span><p class="rotulo">O nome</p><h2 class="h2" id="t-nome">Calamus</h2></div>
+  <div class="sobre-txt">
+    <p>Calamus é a cana de escrever, o instrumento mais antigo do traço. O instituto publica conteúdo e produz material de trabalho para a perícia: grafoscopia, documentoscopia e perícia judicial.</p>
   </div>
-</section>
-<section class="secao branca" id="autora"><div class="wrap ">
-  
-  <div>
-    <p class="rotulo">Autora dos artigos</p>
-    <h2>Patrícia Kayo</h2>
-    <p>Perita judicial e extrajudicial em grafoscopia, documentoscopia e documentoscopia digital. Atua como perita nomeada e como assistente técnica, com cadastro no TJSC, TJPR, TJSP, TRF4 e TRT-12.</p>
-    <p>Graduada em Química pela UFSC, conclui o MBA em Grafoscopia e Documentoscopia e cursa o mestrado no PPGTIC da UFSC Araranguá, com pesquisa em inteligência artificial aplicada à análise de assinaturas biodinâmicas.</p>
+</div></section>
+
+<section class="secao sobre" id="autora" aria-labelledby="t-autora"><div class="wrap sobre-grade">
+  <div><span class="filete"></span><p class="rotulo">Autora dos artigos e produtos</p><h2 class="h2" id="t-autora">Patrícia Kayo</h2></div>
+  <div class="sobre-txt">
+    <p><strong>Patrícia Kayo</strong> é formada em Química e perita em grafoscopia, documentoscopia e documentoscopia digital.</p>
+    <p>Graduada pela UFSC, conclui o MBA em Grafoscopia e Documentoscopia e cursa o mestrado no PPGTIC da UFSC Araranguá, com pesquisa em inteligência artificial aplicada à análise de assinaturas biodinâmicas.</p>
     <p class="sub">Pedidos de perícia ou parecer técnico são atendidos pelo site profissional: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.</p>
   </div>
 </div></section>
-<section class="secao"><div class="wrap perfil">
-  <div><img class="foto-retrato" src="../assets/img/emanuel-bracos.jpg" alt="Dr. Emanuel Behrens" style="max-width:260px"></div>
-  <div>
-    <p class="rotulo">Mentoria para médicos</p>
-    <h2>Dr. Emanuel Behrens</h2>
-    <p>MÉDICO · CRM-SC 28.919. Professor substituto do curso de Medicina da UFSC Araranguá, na área de Clínica Médica.</p>
+
+<section class="secao branca sobre" id="emanuel" aria-labelledby="t-emanuel"><div class="wrap sobre-grade">
+  <div><span class="filete"></span><p class="rotulo">Mentoria para médicos</p><h2 class="h2" id="t-emanuel">Dr. Emanuel Behrens</h2></div>
+  <div class="sobre-txt pessoa">
+    <img class="pessoa-foto" src="../assets/img/emanuel-bracos.jpg" alt="Dr. Emanuel Behrens" loading="lazy">
+    <div>
+      <p class="cred">Médico · CRM-SC 28.919</p>
+      <p>Professor substituto do curso de Medicina da UFSC Araranguá, na área de Clínica Médica.</p>
+      <a class="mais" href="../mentoria/index.html">Ver a mentoria</a>
+    </div>
   </div>
 </div></section>
-<section class="secao branca"><div class="wrap">
-  <p class="rotulo">Contato</p><h2>Fale com o instituto</h2>
-  <p>E-mail: <a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></p>
+
+<section class="secao branca sobre" id="contato" aria-labelledby="t-contato"><div class="wrap sobre-grade">
+  <div><span class="filete"></span><p class="rotulo">Contato</p><h2 class="h2" id="t-contato">Escreva para nós</h2></div>
+  <div class="sobre-txt"><p>E-mail: <a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></p></div>
 </div></section>
 </main>
-<footer class="rodape">
-  <div class="wrap">
-    <div class="rodape-grade">
-      <div>
-        <img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus">
-        <p>Conteúdo e produtos para quem atua ou quer atuar na perícia.</p>
-      </div>
-      <div><h4>Conteúdo</h4><ul>
-        <li><a href="../artigos/index.html">Artigos</a></li>
-        
-        <li><a href="../mentoria/index.html">Mentoria</a></li>
-        </ul></div>
-      <div><h4>Loja</h4><ul>
-        <li><a href="../produtos/index.html">Produtos</a></li>
-        <li><a href="../produtos/index.html#para-comecar">Para começar</a></li>
-        <li><a href="../produtos/index.html#organizacao">Organização</a></li></ul></div>
-      <div><h4>Contato</h4><ul>
-        <li><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></li>
-        <li><a href="../sobre/index.html">Sobre o instituto</a></li></ul></div>
-    </div>
-    <div class="legal">
-      Instituto Calamus<br>
-      Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
-      © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.
-    </div>
+<footer class="rodape"><div class="wrap">
+  <div class="rod-grade">
+    <div><img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus"><p class="frase">Conteúdo e produtos para quem atua ou quer atuar na perícia.</p></div>
+    <div><p class="rod-tit">Conteúdo</p><a href="../artigos/index.html">Artigos</a><a href="../sobre/index.html">Sobre</a></div>
+    <div><p class="rod-tit">Loja</p><a href="../produtos/index.html">Produtos Periciais</a><a href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="../mentoria/index.html">Mentoria para médicos</a></div>
+    <div><p class="rod-tit">Contato</p><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
   </div>
-</footer>
-<script>
-/* deixa "Para médicos recém-formados" exatamente da largura de MENTORIA */
-(function(){
-  function ajusta(){ document.querySelectorAll(".m-cabeca").forEach(function(c){
-    var t=c.querySelector(".m-titulo"), s=c.querySelector(".ajusta"); if(!t||!s) return;
-    s.style.fontSize="20px"; var w=s.getBoundingClientRect().width, W=t.getBoundingClientRect().width;
-    var ft=parseFloat(getComputedStyle(t).fontSize), ls=parseFloat(getComputedStyle(s).letterSpacing)/20||0.12;
-    /* compara só a largura das letras (sem o espaçamento depois da última) */
-    if(w>0) s.style.fontSize=(20*(W-0.14*ft)/(w-ls*20))+"px"; }); }
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajusta); window.addEventListener("load",ajusta); window.addEventListener("resize",ajusta); ajusta();
-})();
-</script>
+  <p class="legal">Instituto Calamus<br>
+    Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
+    © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.</p>
+</div></footer>
+</div>
 </body>
 </html>

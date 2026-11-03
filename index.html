@@ -4,194 +4,171 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Instituto Calamus</title>
-<meta name="description" content="Instituto Calamus: conteúdo, produtos e mentoria para peritos e médicos em início de carreira.">
+<meta name="description" content="Instituto Calamus: material de trabalho e artigos para peritos em grafoscopia e documentoscopia, e mentoria para médicos recém-formados.">
 <link rel="canonical" href="https://institutocalamus.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Instituto Calamus">
 <meta property="og:title" content="Instituto Calamus">
-<meta property="og:description" content="Instituto Calamus: conteúdo, produtos e mentoria para peritos e médicos em início de carreira.">
+<meta property="og:description" content="Instituto Calamus: material de trabalho e artigos para peritos em grafoscopia e documentoscopia, e mentoria para médicos recém-formados.">
 <meta property="og:url" content="https://institutocalamus.com.br/">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_32px.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon_192px.png">
 <link rel="apple-touch-icon" href="assets/img/favicon_192px.png">
 <link rel="preload" href="assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/calamus.css">
+<link rel="preload" href="assets/fonts/Cinzel-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
-<aside class="ml" aria-label="Menu lateral">
-  <a class="ml-logo" href="index.html" aria-label="Instituto Calamus, página inicial"><img src="assets/img/logo-cor.svg" alt="Instituto Calamus"></a>
-  <nav aria-label="Principal"><a class="ml-it" aria-current="page" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg><span>Início</span></a><a class="ml-it" href="artigos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg><span>Artigos</span></a><a class="ml-it" href="produtos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Produtos Periciais</span></a><a class="ml-it" href="mentoria/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="2"/></svg><span>Mentoria para Médicos</span></a><a class="ml-it" href="sobre/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Sobre</span></a></nav>
+<aside class="lat" aria-label="Menu">
+  <a class="lat-logo" href="index.html"><img src="assets/img/logo-porcelana.svg" alt="Instituto Calamus, página inicial"></a>
+  <nav class="lat-nav" aria-label="Principal">
+    <div class="lat-principal">
+      <a class="ativo" aria-current="page" href="index.html">Início</a>
+      <a href="produtos/index.html">Produtos Periciais</a>
+      <a class="sub" href="produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a>
+      <a href="artigos/index.html">Artigos</a>
+      <a href="sobre/index.html">Sobre</a>
+    </div>
+    <p class="lat-rot">Também no instituto</p>
+    <a href="mentoria/index.html">Mentoria para médicos</a>
+  </nav>
+  <div class="lat-pe"><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
 </aside>
-<header class="topo">
-  <div class="wrap">
-    <a class="marca" href="index.html" aria-label="Instituto Calamus, página inicial"><img class="marca-logo" src="assets/img/logo-cor.svg" alt="Instituto Calamus"><img class="marca-mono" src="assets/img/monograma-capa-claro.svg" alt="Instituto Calamus"></a>
-    <nav class="menu" aria-label="Principal"><a href="artigos/index.html">Artigos</a><a href="produtos/index.html">Produtos Periciais</a><a href="mentoria/index.html">Mentoria para Médicos</a><a href="sobre/index.html">Sobre</a></nav>
-    <details class="menu-movel"><summary>Menu</summary><nav aria-label="Principal"><a href="artigos/index.html">Artigos</a><a href="produtos/index.html">Produtos Periciais</a><a href="mentoria/index.html">Mentoria para Médicos</a><a href="sobre/index.html">Sobre</a></nav></details>
-  </div>
+<header class="topo-movel">
+  <a href="index.html" aria-label="Instituto Calamus, página inicial"><img src="assets/img/monograma-principal-claro.svg" alt="Instituto Calamus"></a>
+  <details><summary>Menu</summary><nav aria-label="Principal"><a href="produtos/index.html">Produtos Periciais</a><a class="sub" href="produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="artigos/index.html">Artigos</a><a href="sobre/index.html">Sobre</a><a href="mentoria/index.html">Mentoria para médicos</a></nav></details>
 </header>
+<div class="pagina">
 <main>
 
-<section class="hx-c">
-  <div class="wrap hx-grade">
-    <div class="hx-logo"><h1 class="sr-only">Instituto Calamus</h1><img src="assets/img/logo-hero-escuro.svg" alt="Instituto Calamus"></div>
-    <div class="hx-texto"><p class="hx-frase">Conhecimento, ferramentas e acompanhamento para quem leva a profissão a sério.</p></div>
-  </div>
-</section>
-<section class="carrossel" aria-roledescription="carrossel" aria-label="Destaques">
-  <div class="trilho">
-    <div class="slide s-produtos" role="group" aria-roledescription="slide" aria-label="1 de 2">
-      <div class="wrap slide-grade">
-        <div class="slide-texto">
-          <p class="s-rotulo">Para peritos judiciais</p>
-          <h2 class="s-titulo">Para começar na perícia</h2>
-          <p class="s-lead">Do cadastro no tribunal ao primeiro laudo: petições, guias e modelos prontos para usar, feitos por quem atua na perícia.</p>
-          <a class="btn" href="produtos/index.html">Ver produtos</a>
-        </div>
-        <div class="slide-visual leque"><img src="assets/img/capas/kit-de-peticoes-do-perito.png" alt="Capa: Kit de Petições do Perito"><img src="assets/img/capas/guia-de-cadastro-nos-tribunais.png" alt="Capa: Guia de Cadastro nos Tribunais"><img src="assets/img/capas/modelo-de-laudo-pericial.png" alt="Capa: Modelo de Laudo Pericial"></div>
-      </div>
-    </div>
-    <div class="slide s-mentoria" role="group" aria-roledescription="slide" aria-label="2 de 2">
-      <div class="wrap slide-grade">
-        <div class="slide-texto">
-          <p class="s-rotulo">Para médicos recém-formados</p>
-          <h2 class="s-titulo">Mentoria</h2>
-          <p class="s-lead">Orientação para o início da carreira e discussão dos seus casos clínicos no primeiro mês de trabalho, com um médico ao seu lado.</p>
-          <a class="btn claro" href="mentoria/index.html">Conhecer a mentoria</a>
-        </div>
-        <div class="slide-visual m-icone"><figure><img src="assets/img/mentoria/simbolo-salvia.svg" alt="Mentoria"><figcaption>Dr. Emanuel Behrens · MÉDICO · CRM-SC 28.919</figcaption></figure></div>
-      </div>
+<section class="abertura"><div class="wrap"><div class="abertura-txt">
+  <p class="rotulo">Perícia judicial · Grafoscopia · Documentoscopia</p>
+  <h1 class="h1">Material de trabalho para a perícia</h1>
+  <span class="barra"></span>
+  <p class="lead">Modelos de laudo, guias, petições e a planilha de gestão do perito, com método científico e feitos a partir da prática nos processos.</p>
+  <p class="italico">Da origem do traço à conclusão.</p>
+  <p class="assina">Artigos e produtos escritos por <strong>Patrícia Kayo</strong>, perita em grafoscopia e documentoscopia.</p>
+</div></div></section>
+
+<section class="secao produtos" aria-labelledby="t-produtos"><div class="wrap prod-grade">
+  <div class="cab-secao">
+    <div><span class="filete"></span><p class="rotulo">Produtos para peritos</p><h2 class="h2" id="t-produtos">Produtos Periciais</h2>
+      <p class="lead">Do cadastro no tribunal ao laudo entregue. Cada peça tem a sua função; juntas, formam o material de trabalho do perito, com o mesmo método e a mesma linguagem.</p></div>
+    <div class="prod-controles">
+      <a class="mais" href="produtos/index.html">Ver todos</a>
+      <div class="setas"><button class="seta" type="button" data-dir="-1" aria-label="Produtos anteriores">←</button><button class="seta" type="button" data-dir="1" aria-label="Próximos produtos">→</button><button class="mais pausa" type="button" aria-pressed="false">Pausar</button></div>
     </div>
   </div>
-  <button class="seta ant" type="button" aria-label="Anterior">‹</button>
-  <button class="seta prox" type="button" aria-label="Próximo">›</button>
-  <div class="pontos" role="tablist" aria-label="Escolher destaque">
-    <button type="button" aria-label="Produtos"></button><button type="button" aria-label="Mentoria"></button>
+  <div class="prod-vitrine">
+    <div class="colecao" tabindex="0" role="region" aria-label="Produtos Periciais"><article class="prod-cartao">
+      <a class="prod-arte" href="produtos/index.html#sistema-de-gestao-pericial" tabindex="-1" aria-hidden="true"><img src="assets/img/colecao/fig01-gestao.jpg" alt="" loading="lazy" width="960" height="1440"></a>
+      <div class="prod-corpo">
+        <p class="etiqueta">Organização</p>
+        <h3><a href="produtos/index.html#sistema-de-gestao-pericial">Sistema de Gestão Pericial</a></h3>
+        <p class="formato">Planilha para Excel 2016 ou superior</p>
+        <div class="prod-pe"><p class="preco"><s>R$ 147</s>R$ 97</p><span class="status">Em breve</span></div>
+      </div>
+    </article><article class="prod-cartao">
+      <a class="prod-arte" href="produtos/index.html#modelos-de-laudo-grafotecnico" tabindex="-1" aria-hidden="true"><img src="assets/img/colecao/fig02-laudo.jpg" alt="" loading="lazy" width="960" height="1440"></a>
+      <div class="prod-corpo">
+        <p class="etiqueta">Laudo pericial</p>
+        <h3><a href="produtos/index.html#modelos-de-laudo-grafotecnico">Modelos de Laudo Grafotécnico</a></h3>
+        <p class="formato">Modelos em .docx, prontos para editar</p>
+        <div class="prod-pe"><p class="preco">R$ 67</p><span class="status">Em breve</span></div>
+      </div>
+    </article><article class="prod-cartao">
+      <a class="prod-arte" href="produtos/index.html#guia-de-cadastro-nos-tribunais" tabindex="-1" aria-hidden="true"><img src="assets/img/colecao/fig03-guia.jpg" alt="" loading="lazy" width="960" height="1440"></a>
+      <div class="prod-corpo">
+        <p class="etiqueta">Para começar</p>
+        <h3><a href="produtos/index.html#guia-de-cadastro-nos-tribunais">Guia de Cadastro nos Tribunais</a></h3>
+        <p class="formato">Guia e cadernos por tribunal em PDF</p>
+        <div class="prod-pe"><p class="preco">R$ 97</p><span class="status">Em breve</span></div>
+      </div>
+    </article><article class="prod-cartao">
+      <a class="prod-arte" href="produtos/index.html#kit-de-peticoes-do-perito" tabindex="-1" aria-hidden="true"><img src="assets/img/colecao/fig04-peticoes.jpg" alt="" loading="lazy" width="960" height="1440"></a>
+      <div class="prod-corpo">
+        <p class="etiqueta">Para começar</p>
+        <h3><a href="produtos/index.html#kit-de-peticoes-do-perito">Kit de Petições do Perito</a></h3>
+        <p class="formato">Modelos .docx + guia em PDF</p>
+        <div class="prod-pe"><span class="status">Em breve</span></div>
+      </div>
+    </article><article class="prod-cartao">
+      <a class="prod-arte" href="produtos/index.html#catalogo-de-quadros-comparativos" tabindex="-1" aria-hidden="true"><img src="assets/img/colecao/fig05-quadros.jpg" alt="" loading="lazy" width="960" height="1440"></a>
+      <div class="prod-corpo">
+        <p class="etiqueta">Estudo</p>
+        <h3><a href="produtos/index.html#catalogo-de-quadros-comparativos">Catálogo de Quadros Comparativos</a></h3>
+        <p class="formato">Catálogo PDF + biblioteca em PowerPoint</p>
+        <div class="prod-pe"><span class="status">Em breve</span></div>
+      </div>
+    </article><article class="prod-cartao">
+      <a class="prod-arte" href="produtos/index.html#kit-perito-total" tabindex="-1" aria-hidden="true"><img src="assets/img/colecao/fig06-kit-total.jpg" alt="" loading="lazy" width="960" height="1440"></a>
+      <div class="prod-corpo">
+        <p class="etiqueta">Coleção completa</p>
+        <h3><a href="produtos/index.html#kit-perito-total">Kit Perito Total</a></h3>
+        <p class="formato">Todos os produtos, com atualização por dois anos</p>
+        <div class="prod-pe"><span class="status">Em breve</span></div>
+      </div>
+    </article></div>
+    <div class="trilha-barra" aria-hidden="true"><span></span></div>
   </div>
-</section>
-<script>
-(function(){
-  var c=document.querySelector('.carrossel'); if(!c) return;
-  var t=c.querySelector('.trilho'), n=t.children.length, i=0, timer=null;
-  var pts=c.querySelectorAll('.pontos button');
-  var calmo=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function ir(k){ i=(k+n)%n; t.style.transform='translateX('+(-100*i)+'%)'; c.classList.toggle('escuro', t.children[i].classList.contains('s-mentoria')||t.children[i].classList.contains('s-cursos')||t.children[i].classList.contains('s-editora'));
-    pts.forEach(function(p,j){ p.setAttribute('aria-current', j===i?'true':'false'); });
-    [].forEach.call(t.children,function(s,j){ s.setAttribute('aria-hidden', j===i?'false':'true'); s.querySelectorAll('a,button,input').forEach(function(e){ e.tabIndex = j===i?0:-1; }); }); }
-  function play(){ if(calmo) return; parar(); timer=setInterval(function(){ ir(i+1); },6500); }
-  function parar(){ if(timer) clearInterval(timer); timer=null; }
-  c.querySelector('.ant').onclick=function(){ ir(i-1); play(); };
-  c.querySelector('.prox').onclick=function(){ ir(i+1); play(); };
-  pts.forEach(function(p,j){ p.onclick=function(){ ir(j); play(); }; });
-  c.addEventListener('mouseenter',parar); c.addEventListener('mouseleave',play);
-  c.addEventListener('focusin',parar); c.addEventListener('focusout',play);
-  var x0=null; t.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; parar(); },{passive:true});
-  t.addEventListener('touchend',function(e){ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40) ir(i+(dx<0?1:-1)); x0=null; play(); });
-  ir(0); play();
-  /* textos e botões na mesma altura em todos os slides */
-  function iguala(){ ['.s-rotulo','.s-titulo','.s-lead'].forEach(function(sel){
-      var els=c.querySelectorAll('.slide '+sel); var m=0;
-      els.forEach(function(e){ e.style.minHeight=''; });
-      els.forEach(function(e){ m=Math.max(m, e.getBoundingClientRect().height); });
-      els.forEach(function(e){ e.style.minHeight=m+'px'; }); }); }
-  iguala(); window.addEventListener('resize', iguala); window.addEventListener('load', iguala);
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(iguala);
-})();
-</script>
-<section class="secao">
-  <div class="wrap">
-    <div class="cab-secao"><div><p class="rotulo">Biblioteca</p><h2>Artigos</h2></div><a class="mais" href="artigos/index.html">Ver todos →</a></div>
-    <div class="grade"><article class="cartao cartao-art" data-pilar="Perícia Judicial">
-  <div class="art-foto vazia"></div>
-  <div class="texto">
-  <span class="etiqueta jade">Perícia Judicial</span>
-  <h3>Como funciona a nomeação do perito judicial</h3>
-  <p class="sub">Do cadastro no tribunal à proposta de honorários: o que o CPC prevê para os primeiros dias depois da nomeação.</p>
-  <div class="rodape-cartao"><span class="meta">Em breve</span></div>
+</div></section>
+
+<section class="secao branca" aria-labelledby="t-gestao"><div class="wrap gestao-grade">
+  <div class="vitrine"><div class="cascata" role="img" aria-label="Três abas da planilha Sistema de Gestão Pericial em cascata: Honorários, Prazos e Painel">
+    <img class="c1" src="assets/img/gestao-pericial/aba-honorarios.jpg" alt="" loading="lazy" width="1500" height="960">
+    <img class="c2" src="assets/img/gestao-pericial/aba-prazos.jpg" alt="" loading="lazy" width="1500" height="960">
+    <img class="c3" src="assets/img/gestao-pericial/aba-painel.jpg" alt="" loading="lazy" width="1500" height="960">
+  </div></div>
+  <div class="gestao-txt">
+    <span class="filete"></span><p class="rotulo">Organização · Planilha Excel</p>
+    <h2 class="h2" id="t-gestao">Sistema de Gestão Pericial</h2>
+    <p class="lead">Uma planilha de Excel que organiza a rotina do perito num só arquivo: processos, prazos, honorários, fechamento do mês e cadastros nos tribunais.</p>
+    <ul class="marcas"><li>Painel com o que vence e o que falta receber</li><li>Prazos contados em dias úteis</li><li>Propostas, despesas e fechamento do mês</li><li>Duas versões na mesma compra: Perito e Perito + Assistente Técnico</li></ul>
+    <div class="compra"><p class="preco"><s>R$ 147</s>R$ 97<small>Preço de lançamento</small></p><a class="btn" href="produtos/index.html#sistema-de-gestao-pericial">Conhecer a planilha</a></div>
   </div>
-</article><article class="cartao cartao-art" data-pilar="Carreira">
-  <div class="art-foto vazia"></div>
-  <div class="texto">
-  <span class="etiqueta jade">Carreira</span>
-  <h3>Cadastro de peritos nos tribunais: por onde começar</h3>
-  <p class="sub">O que muda de um tribunal para outro e o que é comum a todos.</p>
-  <div class="rodape-cartao"><span class="meta">Em breve</span></div>
+</div></section>
+
+<section class="secao" aria-labelledby="t-artigos"><div class="wrap">
+  <div class="cab-secao"><div><span class="filete"></span><p class="rotulo">Biblioteca</p><h2 class="h2" id="t-artigos">Artigos</h2></div><a class="mais" href="artigos/index.html">Ver todos</a></div>
+  <div class="jornal-topo">
+    <article class="art-destaque">
+      <div class="art-img" aria-hidden="true"><img src="assets/img/artigos/nomeacao-do-perito-judicial.svg" alt="" loading="lazy"></div>
+      <div class="art-txt"><span class="pilula">Perícia Judicial</span><h3>Como funciona a nomeação do perito judicial</h3><p class="resumo">Do cadastro no tribunal à proposta de honorários: o que o CPC prevê para os primeiros dias depois da nomeação.</p><p class="meta">Em breve</p></div>
+    </article>
+    <div class="coluna-seg"><article class="art-seg">
+      <div class="art-img" aria-hidden="true"><img src="assets/img/artigos/cadastro-de-peritos.svg" alt="" loading="lazy"></div>
+      <div class="art-txt"><span class="pilula">Carreira</span><h3>Cadastro de peritos nos tribunais: por onde começar</h3><p class="resumo">O que muda de um tribunal para outro e o que é comum a todos.</p><p class="meta">Em breve</p></div>
+    </article><article class="art-seg">
+      <div class="art-img" aria-hidden="true"><img src="assets/img/artigos/perito-e-assistente-tecnico.svg" alt="" loading="lazy"></div>
+      <div class="art-txt"><span class="pilula">Assistência Técnica</span><h3>Perito e assistente técnico: papéis diferentes no mesmo processo</h3><p class="resumo">Quem nomeia, quem contrata, a que cada um está sujeito.</p><p class="meta">Em breve</p></div>
+    </article></div>
+    <aside class="lista-art" aria-label="Mais artigos"><p class="lista-tit">Mais artigos</p><ol><li><p class="ed">Perícia Judicial</p>Proposta de honorários periciais: o que incluir<span class="meta">Em breve</span></li><li><p class="ed">Assistência Técnica</p>Quesitos em exame grafotécnico: o que o exame consegue responder<span class="meta">Em breve</span></li><li><p class="ed">Grafoscopia</p>Padrões de confronto: o que torna um padrão adequado<span class="meta">Em breve</span></li><li><p class="ed">Grafoscopia</p>Elementos dinâmicos: o que a forma não mostra<span class="meta">Em breve</span></li><li><p class="ed">Documentoscopia</p>Exame em cópias: limites e possibilidades<span class="meta">Em breve</span></li></ol></aside>
   </div>
-</article><article class="cartao cartao-art" data-pilar="Assistência Técnica">
-  <div class="art-foto vazia"></div>
-  <div class="texto">
-  <span class="etiqueta jade">Assistência Técnica</span>
-  <h3>Perito e assistente técnico: papéis diferentes no mesmo processo</h3>
-  <p class="sub">Quem nomeia, quem contrata, a que cada um está sujeito.</p>
-  <div class="rodape-cartao"><span class="meta">Em breve</span></div>
+  <div class="por-assunto"><h3 class="por-tit">Por assunto</h3><div class="editorias"><section class="editoria"><h4><a href="artigos/index.html#pericia-judicial">Perícia Judicial</a></h4><p class="qtd">2 artigos</p><ul><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/nomeacao-do-perito-judicial.svg" alt="" loading="lazy"></div><span class="t">Como funciona a nomeação do perito judicial</span></li><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/proposta-de-honorarios.svg" alt="" loading="lazy"></div><span class="t">Proposta de honorários periciais: o que incluir</span></li></ul></section><section class="editoria"><h4><a href="artigos/index.html#assistencia-tecnica">Assistência Técnica</a></h4><p class="qtd">2 artigos</p><ul><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/perito-e-assistente-tecnico.svg" alt="" loading="lazy"></div><span class="t">Perito e assistente técnico: papéis diferentes no mesmo processo</span></li><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/quesitos-exame-grafotecnico.svg" alt="" loading="lazy"></div><span class="t">Quesitos em exame grafotécnico: o que o exame consegue responder</span></li></ul></section><section class="editoria"><h4><a href="artigos/index.html#grafoscopia">Grafoscopia</a></h4><p class="qtd">2 artigos</p><ul><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/padroes-de-confronto.svg" alt="" loading="lazy"></div><span class="t">Padrões de confronto: o que torna um padrão adequado</span></li><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/elementos-dinamicos.svg" alt="" loading="lazy"></div><span class="t">Elementos dinâmicos: o que a forma não mostra</span></li></ul></section><section class="editoria"><h4><a href="artigos/index.html#documentoscopia">Documentoscopia</a></h4><p class="qtd">1 artigo</p><ul><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/exame-em-copias.svg" alt="" loading="lazy"></div><span class="t">Exame em cópias: limites e possibilidades</span></li></ul></section><section class="editoria"><h4><a href="artigos/index.html#carreira">Carreira</a></h4><p class="qtd">1 artigo</p><ul><li><div class="mini" aria-hidden="true"><img src="assets/img/artigos/cadastro-de-peritos.svg" alt="" loading="lazy"></div><span class="t">Cadastro de peritos nos tribunais: por onde começar</span></li></ul></section></div></div>
+</div></section>
+
+<section class="secao branca sobre" aria-labelledby="t-sobre"><div class="wrap sobre-grade">
+  <div><span class="filete"></span><p class="rotulo">Sobre</p><h2 class="h2" id="t-sobre">Instituto Calamus</h2></div>
+  <div class="sobre-txt">
+    <p>O Instituto Calamus publica conteúdo e produz material de trabalho para a perícia: grafoscopia, documentoscopia e perícia judicial. Calamus é a cana de escrever, o instrumento mais antigo do traço.</p>
+    <div class="autoria"><p><strong>Patrícia Kayo</strong> é formada em Química e perita em grafoscopia, documentoscopia e documentoscopia digital.</p></div>
   </div>
-</article><article class="cartao cartao-art" data-pilar="Perícia Judicial">
-  <div class="art-foto vazia"></div>
-  <div class="texto">
-  <span class="etiqueta jade">Perícia Judicial</span>
-  <h3>Proposta de honorários periciais: o que incluir</h3>
-  <p class="sub">Como estimar horas, justificar o valor e apresentar a proposta no prazo.</p>
-  <div class="rodape-cartao"><span class="meta">Em breve</span></div>
-  </div>
-</article><article class="cartao cartao-art" data-pilar="Assistência Técnica">
-  <div class="art-foto vazia"></div>
-  <div class="texto">
-  <span class="etiqueta jade">Assistência Técnica</span>
-  <h3>Quesitos em exame grafotécnico: o que o exame consegue responder</h3>
-  <p class="sub">Quesitos bem formulados economizam esclarecimentos depois.</p>
-  <div class="rodape-cartao"><span class="meta">Em breve</span></div>
-  </div>
-</article><article class="cartao cartao-art" data-pilar="Grafoscopia">
-  <div class="art-foto vazia"></div>
-  <div class="texto">
-  <span class="etiqueta jade">Grafoscopia</span>
-  <h3>Padrões de confronto: o que torna um padrão adequado</h3>
-  <p class="sub">Contemporaneidade, quantidade, natureza e autenticidade dos padrões.</p>
-  <div class="rodape-cartao"><span class="meta">Em breve</span></div>
-  </div>
-</article></div>
-  </div>
-</section>
+</div></section>
 
 </main>
-<footer class="rodape">
-  <div class="wrap">
-    <div class="rodape-grade">
-      <div>
-        <img src="assets/img/logo-porcelana.svg" alt="Instituto Calamus">
-        <p>Conteúdo e produtos para quem atua ou quer atuar na perícia.</p>
-      </div>
-      <div><h4>Conteúdo</h4><ul>
-        <li><a href="artigos/index.html">Artigos</a></li>
-        
-        <li><a href="mentoria/index.html">Mentoria</a></li>
-        </ul></div>
-      <div><h4>Loja</h4><ul>
-        <li><a href="produtos/index.html">Produtos</a></li>
-        <li><a href="produtos/index.html#para-comecar">Para começar</a></li>
-        <li><a href="produtos/index.html#organizacao">Organização</a></li></ul></div>
-      <div><h4>Contato</h4><ul>
-        <li><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></li>
-        <li><a href="sobre/index.html">Sobre o instituto</a></li></ul></div>
-    </div>
-    <div class="legal">
-      Instituto Calamus<br>
-      Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
-      © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.
-    </div>
+<footer class="rodape"><div class="wrap">
+  <div class="rod-grade">
+    <div><img src="assets/img/logo-porcelana.svg" alt="Instituto Calamus"><p class="frase">Conteúdo e produtos para quem atua ou quer atuar na perícia.</p></div>
+    <div><p class="rod-tit">Conteúdo</p><a href="artigos/index.html">Artigos</a><a href="sobre/index.html">Sobre</a></div>
+    <div><p class="rod-tit">Loja</p><a href="produtos/index.html">Produtos Periciais</a><a href="produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="mentoria/index.html">Mentoria para médicos</a></div>
+    <div><p class="rod-tit">Contato</p><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
   </div>
-</footer>
-<script>
-/* deixa "Para médicos recém-formados" exatamente da largura de MENTORIA */
-(function(){
-  function ajusta(){ document.querySelectorAll(".m-cabeca").forEach(function(c){
-    var t=c.querySelector(".m-titulo"), s=c.querySelector(".ajusta"); if(!t||!s) return;
-    s.style.fontSize="20px"; var w=s.getBoundingClientRect().width, W=t.getBoundingClientRect().width;
-    var ft=parseFloat(getComputedStyle(t).fontSize), ls=parseFloat(getComputedStyle(s).letterSpacing)/20||0.12;
-    /* compara só a largura das letras (sem o espaçamento depois da última) */
-    if(w>0) s.style.fontSize=(20*(W-0.14*ft)/(w-ls*20))+"px"; }); }
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajusta); window.addEventListener("load",ajusta); window.addEventListener("resize",ajusta); ajusta();
-})();
-</script>
+  <p class="legal">Instituto Calamus<br>
+    Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
+    © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.</p>
+</div></footer>
+</div>
 </body>
 </html>

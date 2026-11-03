@@ -3,141 +3,133 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Produtos Digitais · Instituto Calamus</title>
-<meta name="description" content="Modelos de laudo, petições, guias e ferramentas para peritos e assistentes técnicos.">
+<title>Produtos Periciais · Instituto Calamus</title>
+<meta name="description" content="Modelos de laudo, guias, petições e a planilha de gestão do perito, numa coleção com o mesmo método e a mesma linguagem.">
 <link rel="canonical" href="https://institutocalamus.com.br/produtos/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Instituto Calamus">
-<meta property="og:title" content="Produtos Digitais · Instituto Calamus">
-<meta property="og:description" content="Modelos de laudo, petições, guias e ferramentas para peritos e assistentes técnicos.">
+<meta property="og:title" content="Produtos Periciais · Instituto Calamus">
+<meta property="og:description" content="Modelos de laudo, guias, petições e a planilha de gestão do perito, numa coleção com o mesmo método e a mesma linguagem.">
 <meta property="og:url" content="https://institutocalamus.com.br/produtos/">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_32px.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon_192px.png">
 <link rel="apple-touch-icon" href="../assets/img/favicon_192px.png">
 <link rel="preload" href="../assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/calamus.css">
+<link rel="preload" href="../assets/fonts/Cinzel-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/site.js" defer></script>
 </head>
 <body>
-<aside class="ml" aria-label="Menu lateral">
-  <a class="ml-logo" href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/logo-cor.svg" alt="Instituto Calamus"></a>
-  <nav aria-label="Principal"><a class="ml-it" href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg><span>Início</span></a><a class="ml-it" href="../artigos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg><span>Artigos</span></a><a class="ml-it" aria-current="page" href="../produtos/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Produtos Periciais</span></a><a class="ml-it" href="../mentoria/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="2"/></svg><span>Mentoria para Médicos</span></a><a class="ml-it" href="../sobre/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Sobre</span></a></nav>
+<aside class="lat" aria-label="Menu">
+  <a class="lat-logo" href="../index.html"><img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus, página inicial"></a>
+  <nav class="lat-nav" aria-label="Principal">
+    <div class="lat-principal">
+      <a href="../index.html">Início</a>
+      <a class="ativo" aria-current="page" href="../produtos/index.html">Produtos Periciais</a>
+      <a class="sub" href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a>
+      <a href="../artigos/index.html">Artigos</a>
+      <a href="../sobre/index.html">Sobre</a>
+    </div>
+    <p class="lat-rot">Também no instituto</p>
+    <a href="../mentoria/index.html">Mentoria para médicos</a>
+  </nav>
+  <div class="lat-pe"><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
 </aside>
-<header class="topo">
-  <div class="wrap">
-    <a class="marca" href="../index.html" aria-label="Instituto Calamus, página inicial"><img class="marca-logo" src="../assets/img/logo-cor.svg" alt="Instituto Calamus"><img class="marca-mono" src="../assets/img/monograma-capa-claro.svg" alt="Instituto Calamus"></a>
-    <nav class="menu" aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html" aria-current="page">Produtos Periciais</a><a href="../mentoria/index.html">Mentoria para Médicos</a><a href="../sobre/index.html">Sobre</a></nav>
-    <details class="menu-movel"><summary>Menu</summary><nav aria-label="Principal"><a href="../artigos/index.html">Artigos</a><a href="../produtos/index.html" aria-current="page">Produtos Periciais</a><a href="../mentoria/index.html">Mentoria para Médicos</a><a href="../sobre/index.html">Sobre</a></nav></details>
-  </div>
+<header class="topo-movel">
+  <a href="../index.html" aria-label="Instituto Calamus, página inicial"><img src="../assets/img/monograma-principal-claro.svg" alt="Instituto Calamus"></a>
+  <details><summary>Menu</summary><nav aria-label="Principal"><a class="ativo" aria-current="page" href="../produtos/index.html">Produtos Periciais</a><a class="sub" href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="../artigos/index.html">Artigos</a><a href="../sobre/index.html">Sobre</a><a href="../mentoria/index.html">Mentoria para médicos</a></nav></details>
 </header>
+<div class="pagina">
 <main>
-<section class="hero interna compacta">
-  <img class="dagua" src="../assets/img/monograma-ameixa.svg" alt="" aria-hidden="true">
-  <div class="wrap">
-    
-    <h1>Produtos Digitais</h1>
-    
-    
+<section class="topo-pagina"><div class="wrap">
+  <p class="rotulo">Produtos para peritos</p>
+  <h1 class="h1">Produtos Periciais</h1>
+  <span class="barra"></span>
+  <p class="lead">Do cadastro no tribunal ao laudo entregue. Cada peça tem a sua função; juntas, formam o material de trabalho do perito, com o mesmo método e a mesma linguagem.</p>
+</div></section>
+<section class="secao produtos" id="lancamentos" aria-label="A coleção"><div class="wrap">
+  <p class="rotulo">A coleção</p>
+  <nav class="indice-colecao" aria-label="Produtos da coleção"><a href="#sistema-de-gestao-pericial"><img src="../assets/img/colecao/fig01-gestao.jpg" alt="" loading="lazy" width="960" height="1440"><span><small>Organização</small>Sistema de Gestão Pericial</span></a><a href="#modelos-de-laudo-grafotecnico"><img src="../assets/img/colecao/fig02-laudo.jpg" alt="" loading="lazy" width="960" height="1440"><span><small>Laudo pericial</small>Modelos de Laudo Grafotécnico</span></a><a href="#guia-de-cadastro-nos-tribunais"><img src="../assets/img/colecao/fig03-guia.jpg" alt="" loading="lazy" width="960" height="1440"><span><small>Para começar</small>Guia de Cadastro nos Tribunais</span></a><a href="#kit-de-peticoes-do-perito"><img src="../assets/img/colecao/fig04-peticoes.jpg" alt="" loading="lazy" width="960" height="1440"><span><small>Para começar</small>Kit de Petições do Perito</span></a><a href="#catalogo-de-quadros-comparativos"><img src="../assets/img/colecao/fig05-quadros.jpg" alt="" loading="lazy" width="960" height="1440"><span><small>Estudo</small>Catálogo de Quadros Comparativos</span></a><a href="#kit-perito-total"><img src="../assets/img/colecao/fig06-kit-total.jpg" alt="" loading="lazy" width="960" height="1440"><span><small>Coleção completa</small>Kit Perito Total</span></a></nav>
+</div></section>
+<section class="secao det branca" id="sistema-de-gestao-pericial" aria-labelledby="t-sistema-de-gestao-pericial"><div class="wrap prod-det">
+  <div class="det-arte"><img src="../assets/img/colecao/fig01-gestao.jpg" alt="Sistema de Gestão Pericial: arte da coleção" loading="lazy" width="960" height="1440"></div>
+  <div class="det-txt">
+    <span class="filete"></span><p class="rotulo">Organização</p>
+    <h2 class="h2" id="t-sistema-de-gestao-pericial">Sistema de Gestão Pericial</h2>
+    <p class="lead">Processos, honorários, fechamento do mês e cadastros nos tribunais numa planilha só, com um Painel que mostra o que vence e o que falta receber.</p>
+    <ul class="marcas"><li>Painel, Processos, Prazos em dias úteis e Honorários</li><li>Propostas, Despesas e Fechamento do mês</li><li>Tribunais, Gráficos e Instruções</li><li>Duas versões na mesma compra: Perito e Perito + Assistente Técnico</li></ul>
+    <p class="formato">Planilha para Excel 2016 ou superior</p>
+    <div class="compra"><p class="preco"><s>R$ 147</s>R$ 97<small>Preço de lançamento</small></p><div class="det-acoes"><span class="status">Em breve</span><span id="gestao"></span></div></div>
   </div>
-</section><section class="secao verde" id="para-comecar"><div class="wrap">
-  <div class="cab-secao"><h2>Para começar na Perícia Judicial</h2></div><div class="grade"><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/kit-de-peticoes-do-perito.png" alt="Capa: Kit de Petições do Perito" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Kit de Petições do Perito</h3>
-    <p>Modelos editáveis para as petições mais frequentes do perito judicial, da manifestação de aceite à proposta de honorários, com orientação de uso em cada uma.</p>
+</div></section>
+<section class="secao det" id="modelos-de-laudo-grafotecnico" aria-labelledby="t-modelos-de-laudo-grafotecnico"><div class="wrap prod-det">
+  <div class="det-arte"><img src="../assets/img/colecao/fig02-laudo.jpg" alt="Modelos de Laudo Grafotécnico: arte da coleção" loading="lazy" width="960" height="1440"></div>
+  <div class="det-txt">
+    <span class="filete"></span><p class="rotulo">Laudo pericial</p>
+    <h2 class="h2" id="t-modelos-de-laudo-grafotecnico">Modelos de Laudo Grafotécnico</h2>
+    <p class="lead">Dois modelos de laudo para exame de autenticidade de assinatura, já preenchidos com um caso fictício e com um comentário na margem de cada campo dizendo o que pôr no lugar.</p>
+    <ul class="marcas"><li>Um modelo para o caso direto e outro com relatório, critérios de admissibilidade, metodologia integral e hipóteses</li><li>Cada modelo em três diagramações</li><li>30 capas, do simples ao de gala, todas com lugar para o seu logotipo</li><li>Manual de uso, guia rápido com checklist e catálogo das capas</li></ul>
+    <p class="formato">Modelos em .docx, prontos para editar</p>
+    <div class="compra"><p class="preco">R$ 67</p><div class="det-acoes"><span class="status">Em breve</span></div></div>
+  </div>
+</div></section>
+<section class="secao det branca" id="guia-de-cadastro-nos-tribunais" aria-labelledby="t-guia-de-cadastro-nos-tribunais"><div class="wrap prod-det">
+  <div class="det-arte"><img src="../assets/img/colecao/fig03-guia.jpg" alt="Guia de Cadastro nos Tribunais: arte da coleção" loading="lazy" width="960" height="1440"></div>
+  <div class="det-txt">
+    <span class="filete"></span><p class="rotulo">Para começar</p>
+    <h2 class="h2" id="t-guia-de-cadastro-nos-tribunais">Guia de Cadastro nos Tribunais</h2>
+    <p class="lead">Onde e como o perito se cadastra: da organização do Judiciário ao formulário de cada tribunal.</p>
+    <ul class="marcas"><li>Panorama nacional: como o Judiciário se organiza e onde o perito entra no processo</li><li>Os 57 tribunais com sistema, normas e pontos de atenção, a partir de fontes oficiais</li><li>Cadernos por tribunal com o cadastro tela por tela, capturado num cadastro real</li></ul>
+    <p class="formato">Guia e cadernos por tribunal em PDF</p>
+    <div class="compra"><p class="preco">R$ 97</p><div class="det-acoes"><span class="status">Em breve</span></div></div>
+  </div>
+</div></section>
+<section class="secao det" id="kit-de-peticoes-do-perito" aria-labelledby="t-kit-de-peticoes-do-perito"><div class="wrap prod-det">
+  <div class="det-arte"><img src="../assets/img/colecao/fig04-peticoes.jpg" alt="Kit de Petições do Perito: arte da coleção" loading="lazy" width="960" height="1440"></div>
+  <div class="det-txt">
+    <span class="filete"></span><p class="rotulo">Para começar</p>
+    <h2 class="h2" id="t-kit-de-peticoes-do-perito">Kit de Petições do Perito</h2>
+    <p class="lead">Modelos editáveis para as petições mais frequentes do perito judicial, da manifestação de aceite à proposta de honorários, com orientação de uso em cada uma.</p>
+    
     <p class="formato">Modelos .docx + guia em PDF</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
+    <div class="compra"><div class="det-acoes"><span class="status">Em breve</span></div></div>
   </div>
-</article><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/guia-de-cadastro-nos-tribunais.png" alt="Capa: Guia de Cadastro nos Tribunais" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Guia de Cadastro nos Tribunais</h3>
-    <p>O caminho do cadastro de peritos passo a passo: documentos, sistemas e cuidados para não ter a inscrição recusada.</p>
-    <p class="formato">Guia em PDF</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
+</div></section>
+<section class="secao det branca" id="catalogo-de-quadros-comparativos" aria-labelledby="t-catalogo-de-quadros-comparativos"><div class="wrap prod-det">
+  <div class="det-arte"><img src="../assets/img/colecao/fig05-quadros.jpg" alt="Catálogo de Quadros Comparativos: arte da coleção" loading="lazy" width="960" height="1440"></div>
+  <div class="det-txt">
+    <span class="filete"></span><p class="rotulo">Estudo</p>
+    <h2 class="h2" id="t-catalogo-de-quadros-comparativos">Catálogo de Quadros Comparativos</h2>
+    <p class="lead">Modelos de pranchas de confronto de imagens para laudos e pareceres.</p>
+    
+    <p class="formato">Catálogo PDF + biblioteca em PowerPoint</p>
+    <div class="compra"><div class="det-acoes"><span class="status">Em breve</span></div></div>
   </div>
-</article><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/modelo-de-laudo-pericial.png" alt="Capa: Modelo de Laudo Pericial" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Modelo de Laudo Pericial</h3>
-    <p>Estrutura completa de laudo para exame grafotécnico, explicada seção por seção, com um exemplo preenchido para consulta.</p>
-    <p class="formato">Modelo .docx + guia em PDF + exemplo preenchido</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
+</div></section>
+<section class="secao det" id="kit-perito-total" aria-labelledby="t-kit-perito-total"><div class="wrap prod-det">
+  <div class="det-arte"><img src="../assets/img/colecao/fig06-kit-total.jpg" alt="Kit Perito Total: arte da coleção" loading="lazy" width="960" height="1440"></div>
+  <div class="det-txt">
+    <span class="filete"></span><p class="rotulo">Coleção completa</p>
+    <h2 class="h2" id="t-kit-perito-total">Kit Perito Total</h2>
+    <p class="lead">Os cinco produtos da coleção num só pacote, com dois anos de atualizações.</p>
+    <ul class="marcas"><li>Sistema de Gestão Pericial</li><li>Modelos de Laudo Grafotécnico</li><li>Guia de Cadastro nos Tribunais</li><li>Kit de Petições do Perito</li><li>Catálogo de Quadros Comparativos</li></ul>
+    <p class="formato">Todos os produtos, com atualização por dois anos</p>
+    <div class="compra"><div class="det-acoes"><span class="status">Em breve</span></div></div>
   </div>
-</article></div></div></section><section class="secao verde" id="organizacao"><div class="wrap">
-  <div class="cab-secao"><h2>Organização</h2></div><div class="grade"><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/sistema-de-gestao-pericial.png" alt="Capa: Sistema de Gestão Pericial" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Sistema de Gestão Pericial</h3>
-    <p>Processos, prazos em dias úteis, honorários e cadastros nos tribunais numa planilha só, com versões para perito, assistente técnico ou os dois.</p>
-    <p class="formato">Planilha para Excel (.xlsx)</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
-  </div>
-</article><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/sistema-de-gestao-pericial-no-notion.png" alt="Capa: Sistema de Gestão Pericial no Notion" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Sistema de Gestão Pericial no Notion</h3>
-    <p>Template para controlar processos, prazos, honorários e diligências em um só lugar.</p>
-    <p class="formato">Template Notion</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
-  </div>
-</article></div></div></section><section class="secao" id="estudo"><div class="wrap">
-  <div class="cab-secao"><h2>Estudo</h2></div><div class="grade"><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/catalogo-de-quadros-comparativos.png" alt="Capa: Catálogo de Quadros Comparativos" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Catálogo de Quadros Comparativos</h3>
-    <p>Modelos de pranchas de confronto de imagens para laudos e pareceres.</p>
-    <p class="formato">Catálogo PDF + biblioteca editável em PowerPoint</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
-  </div>
-</article><article class="cartao produto">
-  <div class="vitrine"><span class="mock"><img src="../assets/img/capas/apostila-de-grafoscopia.png" alt="Capa: Apostila de Grafoscopia" loading="lazy"></span></div>
-  <div class="texto">
-    <h3>Apostila de Grafoscopia</h3>
-    <p>Fundamentos teóricos da grafoscopia, organizados para estudo.</p>
-    <p class="formato">Apostila em PDF</p>
-    <div class="rodape-cartao"><span class="status">Em breve</span></div>
-  </div>
-</article></div></div></section>
+</div></section>
 </main>
-<footer class="rodape">
-  <div class="wrap">
-    <div class="rodape-grade">
-      <div>
-        <img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus">
-        <p>Conteúdo e produtos para quem atua ou quer atuar na perícia.</p>
-      </div>
-      <div><h4>Conteúdo</h4><ul>
-        <li><a href="../artigos/index.html">Artigos</a></li>
-        
-        <li><a href="../mentoria/index.html">Mentoria</a></li>
-        </ul></div>
-      <div><h4>Loja</h4><ul>
-        <li><a href="../produtos/index.html">Produtos</a></li>
-        <li><a href="../produtos/index.html#para-comecar">Para começar</a></li>
-        <li><a href="../produtos/index.html#organizacao">Organização</a></li></ul></div>
-      <div><h4>Contato</h4><ul>
-        <li><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></li>
-        <li><a href="../sobre/index.html">Sobre o instituto</a></li></ul></div>
-    </div>
-    <div class="legal">
-      Instituto Calamus<br>
-      Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
-      © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.
-    </div>
+<footer class="rodape"><div class="wrap">
+  <div class="rod-grade">
+    <div><img src="../assets/img/logo-porcelana.svg" alt="Instituto Calamus"><p class="frase">Conteúdo e produtos para quem atua ou quer atuar na perícia.</p></div>
+    <div><p class="rod-tit">Conteúdo</p><a href="../artigos/index.html">Artigos</a><a href="../sobre/index.html">Sobre</a></div>
+    <div><p class="rod-tit">Loja</p><a href="../produtos/index.html">Produtos Periciais</a><a href="../produtos/index.html#sistema-de-gestao-pericial">Gestão Pericial</a><a href="../mentoria/index.html">Mentoria para médicos</a></div>
+    <div><p class="rod-tit">Contato</p><a href="mailto:institutocalamus@gmail.com">institutocalamus@gmail.com</a></div>
   </div>
-</footer>
-<script>
-/* deixa "Para médicos recém-formados" exatamente da largura de MENTORIA */
-(function(){
-  function ajusta(){ document.querySelectorAll(".m-cabeca").forEach(function(c){
-    var t=c.querySelector(".m-titulo"), s=c.querySelector(".ajusta"); if(!t||!s) return;
-    s.style.fontSize="20px"; var w=s.getBoundingClientRect().width, W=t.getBoundingClientRect().width;
-    var ft=parseFloat(getComputedStyle(t).fontSize), ls=parseFloat(getComputedStyle(s).letterSpacing)/20||0.12;
-    /* compara só a largura das letras (sem o espaçamento depois da última) */
-    if(w>0) s.style.fontSize=(20*(W-0.14*ft)/(w-ls*20))+"px"; }); }
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajusta); window.addEventListener("load",ajusta); window.addEventListener("resize",ajusta); ajusta();
-})();
-</script>
+  <p class="legal">Instituto Calamus<br>
+    Produtos digitais vendidos pela Kiwify; mentoria pelo Mercado Pago. Pedidos de perícia e parecer técnico: <a href="https://patriciakayo.com.br">patriciakayo.com.br</a>.<br>
+    © 2026 Instituto Calamus. Conteúdo protegido pela Lei 9.610/1998.</p>
+</div></footer>
+</div>
 </body>
 </html>
