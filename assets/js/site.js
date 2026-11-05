@@ -47,4 +47,27 @@
   [].forEach.call(document.querySelectorAll('.topo-movel nav a'), function (a) {
     a.addEventListener('click', function () { a.closest('details').open = false; });
   });
+
+  // Artigo: copiar o link
+  [].forEach.call(document.querySelectorAll('.copiar'), function (b) {
+    b.addEventListener('click', function () {
+      var aviso = b.parentNode.querySelector('.copiado');
+      var ok = function () { aviso.textContent = 'Link copiado.'; setTimeout(function () { aviso.textContent = ''; }, 2500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.url).then(ok, function () { aviso.textContent = b.dataset.url; });
+      else aviso.textContent = b.dataset.url;
+    });
+  });
+
+  // Artigo: no sumário, marca a parte que está sendo lida
+  var links = [].slice.call(document.querySelectorAll('.sumario a'));
+  if (links.length && 'IntersectionObserver' in window) {
+    var partes = links.map(function (a) { return document.getElementById(a.hash.slice(1)); });
+    var marca = function () {
+      var atual = 0;
+      partes.forEach(function (h, i) { if (h && h.getBoundingClientRect().top < window.innerHeight * 0.35) atual = i; });
+      links.forEach(function (a, i) { if (i === atual) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+    };
+    window.addEventListener('scroll', marca, { passive: true });
+    marca();
+  }
 })();
