@@ -329,6 +329,11 @@ body.pg-artigo { --lat: 76px; --serif: "Newsreader", Georgia, serif; }
 .texto-artigo .fontes ul { gap: .35em; }
 .texto-artigo .fontes li { padding-left: 18px; }
 .texto-artigo .fontes p { margin-top: 14px; }
+.texto-artigo .fontes .fontes-grupo { margin-top: 18px; font-weight: 500; color: var(--tinta); }
+.texto-artigo .fontes h3 + .fontes-grupo { margin-top: 0; }
+.texto-artigo .fontes .fontes-grupo + ul { margin-top: 6px; }
+.texto-artigo blockquote { margin: 0; padding: 4px 0 4px 26px; border-left: 3px solid var(--salvia); font-style: italic; color: var(--sub); }
+.texto-artigo blockquote p { font-size: .95em; }
 @media (max-width: 640px) { .texto-artigo table { font-size: 14px; min-width: 520px; } }
 /* esquema em árvore dentro do texto (11/11/2026) */
 .texto-artigo .esquema { --cor-linha: rgba(42,20,40,.28); margin: 2.2em 0 !important; padding: 40px 28px 26px; background: var(--perola); border-radius: 8px; font: 400 14px/1.35 "Jost", sans-serif; }
