@@ -296,7 +296,13 @@ body.pg-artigo { --lat: 76px; --serif: "Newsreader", Georgia, serif; }
 .pg-artigo .lat:hover .lat-rot, .pg-artigo .lat:hover .lat-pe, .pg-artigo .lat:focus-within .lat-rot, .pg-artigo .lat:focus-within .lat-pe { opacity: 1; }
 .pg-artigo .artigo-topo, .pg-artigo .corpo-artigo, .pg-artigo .texto-artigo { background: #FCFBF8; }
 .pg-artigo .artigo-topo { padding-top: 56px; }
-.pg-artigo .artigo-largo.com-img { grid-template-columns: minmax(0, 720px) minmax(200px, 240px); align-items: end; padding-bottom: 28px; border-bottom: 1px solid var(--tinta); }
+.pg-artigo .artigo-largo.com-img { grid-template-columns: minmax(0, 720px) minmax(200px, 240px); align-items: stretch; padding-bottom: 28px; border-bottom: 1px solid var(--tinta); }
+/* coluna ao lado do título: arte do artigo (16:10, inteira) e, embaixo, o selo do Instituto, que completa a altura do texto (13/11/2026) */
+.artigo-lateral { display: flex; flex-direction: column; gap: 10px; height: 100%; }
+.selo-calamus { flex: 1; min-height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 14px; border-radius: var(--raio); background: radial-gradient(circle at 60% 40%, #3A1A37, #150912); box-shadow: inset 0 0 0 1px rgba(220,193,140,.28); text-align: center; }
+.selo-calamus img { width: 38px; height: auto; }
+.selo-calamus p { font: 500 11px/1.3 "Cinzel", Georgia, serif; letter-spacing: .22em; text-transform: uppercase; color: var(--porcelana); }
+.selo-calamus span { font: 500 9.5px/1.3 "Jost", sans-serif; letter-spacing: .28em; text-transform: uppercase; color: #DCC18C; }
 .pg-artigo .artigo-cab .rotulo { display: inline-block; padding-top: 14px; border-top: 3px double var(--tinta); }
 .pg-artigo .artigo-cab h1 { font: 500 clamp(30px, 3vw, 40px)/1.14 var(--serif); letter-spacing: -.005em; text-transform: none; margin: 18px 0 14px; }
 .pg-artigo .artigo-topo .italico { font: italic 400 20px/1.45 var(--serif); max-width: 40em; }
@@ -471,6 +477,7 @@ body.pg-artigo { --lat: 76px; --serif: "Newsreader", Georgia, serif; }
   .artigo-largo.com-img, .artigo-largo.com-sumario { display: block; }
   .artigo-largo.com-img .artigo-img { margin-top: 36px; max-width: 720px; }
   .artigo-largo.com-img .artigo-img img { aspect-ratio: 16 / 10; }
+  .selo-calamus { display: none; }
   .sumario, .pg-artigo .sumario { position: static; max-width: 720px; margin-top: 36px; padding: 22px 24px; border: 0; background: var(--perola); border-radius: var(--raio); }
   .pg-artigo .artigo-largo.com-img { padding-bottom: 28px; }
 }
