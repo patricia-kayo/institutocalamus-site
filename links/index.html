@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Links · Instituto Calamus</title>
+<meta name="description" content="Links do Instituto Calamus: o site, o Sistema de Gestão Pericial e o contato.">
+<link rel="canonical" href="https://institutocalamus.com.br/links/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto Calamus">
+<meta property="og:title" content="Links · Instituto Calamus">
+<meta property="og:description" content="Links do Instituto Calamus: o site, o Sistema de Gestão Pericial e o contato.">
+<meta property="og:url" content="https://institutocalamus.com.br/links/">
+<meta name="theme-color" content="#120810">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_32px.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon_192px.png">
+<link rel="apple-touch-icon" href="../assets/img/favicon_192px.png">
+<style>
+@font-face { font-family: "Cinzel"; src: url("../assets/fonts/Cinzel-Variable.woff2") format("woff2"); font-weight: 400 900; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("../assets/fonts/Jost-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("../assets/fonts/EBGaramond-Italic-Variable.woff2") format("woff2"); font-style: italic; font-weight: 400 800; font-display: swap; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+body { min-height: 100vh; background: #120810 radial-gradient(120% 70% at 50% 0%, #3A1A37 0%, #1E0C1B 55%, #120810 100%) no-repeat; color: #F7F6F3;
+  font: 400 16px/1.5 "Jost", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.lk { max-width: 440px; min-height: 100vh; margin: 0 auto; padding: 48px 24px 34px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+/* marca: o monograma IC com o I dourado (monograma-capa-escuro.svg) e o nome em texto, para ficar legível */
+.lk-marca { margin: 0; font: inherit; }
+.lk-marca a { position: relative; isolation: isolate; display: flex; flex-direction: column; align-items: center; color: inherit; text-decoration: none; }
+.lk-marca a::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 64px; width: 280px; height: 280px; transform: translate(-50%, -50%);
+  background: radial-gradient(closest-side, rgba(201,169,198,.20), rgba(201,169,198,0)); pointer-events: none; }
+.lk-mono { display: block; width: 108px; height: auto; filter: drop-shadow(0 12px 22px rgba(0,0,0,.45)); }
+.lk-inst { display: block; margin-top: 22px; font: 500 14px/1 "Jost", sans-serif; letter-spacing: .52em; text-indent: .52em; text-transform: uppercase; color: #E4D7E2; }
+.lk-nome { display: block; margin-top: 10px; font: 500 34px/1 "Cinzel", Georgia, serif; letter-spacing: .14em; text-indent: .14em; color: #F7F6F3; }
+.lk-barra { display: block; width: 56px; height: 3px; margin: 22px auto 18px; background: #4F6E5C; }
+.lk-rot { margin: 0; font: 500 11px/1.6 "Jost", sans-serif; letter-spacing: .3em; text-transform: uppercase; color: #C9A9C6; }
+/* botões: superfície com luz, borda de "tecla", sobem ao passar o mouse e afundam no toque; um brilho passa por eles de tempos em tempos */
+.lk-lista { width: 100%; display: grid; gap: 18px; margin-top: 40px; }
+.lk-item { --i: 0; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 64px; padding: 14px 58px;
+  border-radius: 4px; background: linear-gradient(180deg, #FDFCFB 0%, #F3EFF1 50%, #E5DAE3 100%); color: #4A2346;
+  font: 500 14px/1.2 "Jost", sans-serif; letter-spacing: .3em; text-transform: uppercase; text-decoration: none; -webkit-tap-highlight-color: transparent;
+  box-shadow: inset 0 1px 0 #FFFFFF, inset 0 -1px 0 rgba(74,35,70,.08), 0 4px 0 #B395AF, 0 16px 30px -12px rgba(0,0,0,.75);
+  transition: transform .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s cubic-bezier(.2,.8,.2,1), background .22s;
+  animation: lk-entra .7s cubic-bezier(.2,.8,.2,1) backwards; animation-delay: calc(.25s + var(--i) * .12s); }
+.lk-item span { position: relative; z-index: 1; padding-left: .3em; }
+.lk-item::after { content: ""; position: absolute; top: -20%; bottom: -20%; left: -70%; width: 50%; pointer-events: none;
+  background: linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.65) 35%, #FFFFFF 50%, rgba(255,255,255,.65) 65%, rgba(255,255,255,0) 100%); transform: skewX(-18deg);
+  animation: lk-brilho 6s ease-in-out infinite; animation-delay: calc(1.6s + var(--i) * .2s); }
+.lk-seta { position: absolute; z-index: 1; right: 22px; top: 50%; width: 18px; height: 18px; margin-top: -9px; fill: none; stroke: currentColor;
+  stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .45; transition: transform .22s cubic-bezier(.2,.8,.2,1), opacity .22s; }
+@media (hover: hover) {
+  .lk-item:hover { transform: translateY(-3px); background: linear-gradient(180deg, #FFFFFF 0%, #FBFAF9 50%, #F1EAF0 100%);
+    box-shadow: inset 0 1px 0 #FFFFFF, inset 0 -1px 0 rgba(74,35,70,.08), 0 6px 0 #B395AF, 0 24px 38px -14px rgba(0,0,0,.8), 0 0 34px -4px rgba(201,169,198,.55); }
+  .lk-item:hover .lk-seta { opacity: 1; transform: translateX(5px); }
+}
+.lk-item:active { transform: translateY(4px); transition-duration: .06s;
+  box-shadow: inset 0 1px 0 #FFFFFF, inset 0 2px 6px rgba(74,35,70,.12), 0 0 0 #B395AF, 0 6px 14px -8px rgba(0,0,0,.7); }
+.lk-item:active .lk-seta { opacity: 1; transform: translateX(5px); }
+.lk-item:focus-visible { outline: 2px solid #F7F6F3; outline-offset: 4px; }
+@keyframes lk-entra { from { opacity: 0; transform: translateY(14px); } }
+@keyframes lk-brilho { 0% { left: -70%; } 20%, 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .lk-item, .lk-item::after { animation: none; } .lk-item::after { display: none; } }
+.lk-frase { margin: auto 0 0; padding-top: 46px; font: italic 400 19px/1.4 "EB Garamond", Georgia, serif; color: #F7F6F3; opacity: .85; }
+.lk-pe { margin: 10px 0 0; font-size: 12px; letter-spacing: .18em; color: #CDBDCB; }
+.lk-pe a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body ontouchstart="">
+<main class="lk">
+  <h1 class="lk-marca"><a href="../index.html"><img class="lk-mono" src="../assets/img/monograma-capa-escuro.svg" alt="" width="108" height="129"><span class="lk-inst">Instituto</span><span class="lk-nome">Calamus</span></a></h1>
+  <span class="lk-barra"></span>
+  <p class="lk-rot">Perícia judicial · Grafoscopia · Documentoscopia</p>
+  <nav class="lk-lista" aria-label="Links">
+    <a class="lk-item" style="--i:0" href="../index.html"><span>Site</span><svg class="lk-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a class="lk-item" style="--i:1" href="../gestao-pericial/index.html"><span>Gestão Pericial</span><svg class="lk-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a class="lk-item" style="--i:2" href="mailto:institutocalamus@gmail.com"><span>Contato</span><svg class="lk-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+  </nav>
+  <p class="lk-frase">Da origem do traço à conclusão.</p>
+  <p class="lk-pe"><a href="../index.html">institutocalamus.com.br</a></p>
+</main>
+</body>
+</html>
