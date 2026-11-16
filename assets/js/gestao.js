@@ -26,4 +26,24 @@
     if(temIO&&alvo){ new IntersectionObserver(function(es){ barra.classList.toggle('on',!es[0].isIntersecting); }).observe(alvo); }
     else barra.classList.add('on');
   }
+
+  // origem da venda (16/11/2026): o anúncio chega com ?src=etiqueta (ex.: stories-iniciante-a).
+  // A etiqueta vai para a Kiwify em "src" e a página onde a compra começou (comece, geral) vai em "s1".
+  // Fica guardada 30 dias neste navegador, para quem vê o anúncio e volta depois. Só a etiqueta, nenhum dado pessoal.
+  // Parâmetros aceitos pela Kiwify: src, sck, utm_*, s1, s2, s3.
+  try{
+    var ACEITOS=['src','sck','utm_source','utm_medium','utm_campaign','utm_term','utm_content','s2','s3'];
+    var CHAVE='calamus_origem', agora=Date.now(), q=new URLSearchParams(location.search), novo={}, tem=false;
+    ACEITOS.forEach(function(k){ var x=q.get(k); if(x){ novo[k]=x.slice(0,100); tem=true; } });
+    if(tem) localStorage.setItem(CHAVE, JSON.stringify({t:agora,p:novo}));
+    var g=JSON.parse(localStorage.getItem(CHAVE)||'null'), origem=(g&&agora-g.t<30*864e5)?g.p:null;
+    if(origem){
+      [].forEach.call(d.querySelectorAll('a[href*="pay.kiwify.com.br"]'),function(a){
+        var u=new URL(a.href), pagina=u.searchParams.get('src');
+        Object.keys(origem).forEach(function(k){ u.searchParams.set(k,origem[k]); });
+        if(pagina&&origem.src) u.searchParams.set('s1',pagina);
+        a.href=u.toString();
+      });
+    }
+  }catch(e){}
 })();
