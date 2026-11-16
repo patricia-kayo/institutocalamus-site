@@ -20,10 +20,10 @@
     els.forEach(function(e){ io.observe(e); });
   }
 
-  // barra de compra (celular): aparece quando o botão da abertura já saiu da tela
+  // barra de compra (celular): aparece sempre que o botão da abertura está fora da tela, abaixo (celular pequeno) ou já rolado para cima (16/11/2026)
   var barra=d.querySelector('.lp-barra'), alvo=d.querySelector('.lp-hero .lp-btn');
   if(barra){
-    if(temIO&&alvo){ new IntersectionObserver(function(es){ var e=es[0]; barra.classList.toggle('on',!e.isIntersecting&&e.boundingClientRect.top<0); }).observe(alvo); }
+    if(temIO&&alvo){ new IntersectionObserver(function(es){ barra.classList.toggle('on',!es[0].isIntersecting); }).observe(alvo); }
     else barra.classList.add('on');
   }
 })();
